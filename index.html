@@ -361,27 +361,14 @@
 
       
         
-          
-            <h4 id="添加标签和分类"><a href="#添加标签和分类" class="headerlink" title="添加标签和分类"></a>添加标签和分类</h4><p>在Hexo中，有两种管理的方式，一种是使用分类的方式，这是一种有层次的分类方式，适用于大类别下套小类别的分类方式，例如：编程语言-python等。而还有一种是使用标签的方式，这种方式适用于同一级别的类别分类方式，例如：小说，论文等。<br>对应于具体的文章，可以在Front-matter中进行设定，例如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 标签</div><div class="line">tages: </div><div class="line"> -小说</div><div class="line"> -论文</div><div class="line">---</div><div class="line"></div><div class="line">---</div><div class="line">title: 分类</div><div class="line">categories: </div><div class="line"> -编程语言</div><div class="line"> -python</div><div class="line">---</div></pre></td></tr></table></figure>
-<p>在这种情况下，Hexo将会自动的将每一篇文章进行归档。</p>
-<h4 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h4><p>在很多时候我们点击标签页和分类页查看具体情况的时候会出现一些问题。这里描述一下常见的两种情况。</p>
-<h5 id="文件路径包含中文"><a href="#文件路径包含中文" class="headerlink" title="文件路径包含中文"></a>文件路径包含中文</h5><p>在很多时候会报下面这种错误</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TypeError: The header content contains invalid characters</div></pre></td></tr></table></figure>
-<p>出现这种问题的主要原因是路径中出现了中文，只需要将分类的路径改成英文即可。</p>
-<h5 id="没有生产标签页和分类页"><a href="#没有生产标签页和分类页" class="headerlink" title="没有生产标签页和分类页"></a>没有生产标签页和分类页</h5><p>有时候还会出现下面这种问题</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cannot get /tags/</div><div class="line">cannot get /categories/</div></pre></td></tr></table></figure>
-<p>出现这种问题是因为配置路径和实际路径不对。配置路径在主题文件夹(.\hexo\themes\next)中的_config.yml文件里面。找到下面这样的描述，例如我使用tags表示标签页。需要检查一下是否在.\hexo\source文件夹中存在tags文件夹，如果不存在则需要创建tags标签页。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  categories: /categories</div><div class="line">  tags: /tags</div><div class="line">  about: /about</div><div class="line">  #archives: /archives</div><div class="line">  #sitemap: /sitemap.xml</div><div class="line">  #commonweal: /404.html</div></pre></td></tr></table></figure>
-<p>创建标签页的方法是使用hexo中的指令来添加，以tags为例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page tags</div></pre></td></tr></table></figure>
-<p>执行这条指令之后，在.\hexo\source文件夹下会新增一个tags文件夹，里面有一个index.md。打开来之后里面只有title和date属性，我们需要添加一个type属性，修改成下面这样。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: tags</div><div class="line">date: 2017-01-28 01:55:09 #时间随意</div><div class="line">type: tags</div><div class="line">---</div></pre></td></tr></table></figure>
-<p>分类页的情况一样，需要把type属性改成categories</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: categories</div><div class="line">date: 2017-01-28 02:15:09 #时间随意</div><div class="line">type: categories</div><div class="line">---</div></pre></td></tr></table></figure>
-<p>完成修改之后重新生成部署即可。</p>
-
-          
+          <h4 id="添加标签和分类"><a href="#添加标签和分类" class="headerlink" title="添加标签和分类"></a>添加标签和分类</h4><p>在Hexo中，有两种管理的方式，一种是使用分类的方式，这是一种有层次的分类方式，适用于大类别下套小类别的分类方式，例如：编程语言-python等。而还有一种是使用标签的方式，这种方式适用于同一级别的类别分类方式，例如：小说，论文等。<br>对应于具体的文章，可以在Front-matter中进行设定，例如：</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/01/28/技术/Hexo/How_to_add_tags_page/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -788,7 +775,7 @@
       
         
           
-            <h4 id="Hi-Thinking"><a href="#Hi-Thinking" class="headerlink" title="Hi, Thinking!"></a>Hi, Thinking!</h4><p>现实世界充满喧嚣，启程时的誓言已被掩盖。路途中四处观花，轻尝美景的芬芳。丽影无数，却只略观，此时想起回眸，不晚，不晚。<br>掩埋野蜂的狂狼，静坐思考，揭开藏在深处的远方。</p>
+            <h4 id="Hi-Thinking"><a href="#Hi-Thinking" class="headerlink" title="Hi, Thinking!"></a>Hi, Thinking!</h4><p>现实世界充满喧嚣，启程时的誓言已被掩盖。路途中四处观花，轻尝美景的芬芳。丽影无数，却只略观，此时想起回眸，不晚，不晚。<br>掩埋野蜂的狂浪，静坐思考，揭开藏在深处的远方。</p>
 
           
         
