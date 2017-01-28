@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2017-01-28T15:29:40.163Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/archives/index.html</loc>
     
     <lastmod>2017-01-28T15:27:04.554Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://yoursite.com/2017/01/28/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_tags_page/</loc>
     
     <lastmod>2017-01-28T12:18:14.235Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    
-    <lastmod>2017-01-27T18:04:34.870Z</lastmod>
     
   </url>
   
