@@ -2,9 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2017/01/21/hello-world/</loc>
+    <loc>http://yoursite.com/categories/index.html</loc>
     
-    <lastmod>2017-01-21T15:45:47.377Z</lastmod>
+    <lastmod>2017-01-28T12:20:09.971Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2017-01-28T12:20:01.209Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/01/28/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_tags_page/</loc>
+    
+    <lastmod>2017-01-28T12:18:14.235Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2017-01-27T18:04:34.870Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/01/27/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/(%E4%BA%8C)/</loc>
+    
+    <lastmod>2017-01-27T11:13:38.319Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/01/27/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/(%E4%B8%80)/</loc>
+    
+    <lastmod>2017-01-27T11:13:37.626Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/01/22/Preface/</loc>
+    
+    <lastmod>2017-01-27T11:08:17.929Z</lastmod>
     
   </url>
   
