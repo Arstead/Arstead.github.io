@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-29T15:56:28.333Z</updated>
+  <updated>2017-01-29T15:57:19.110Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/01/29/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_algolia_into_hexo/"/>
     <id>http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/</id>
     <published>2017-01-29T12:02:55.000Z</published>
-    <updated>2017-01-29T15:56:28.333Z</updated>
+    <updated>2017-01-29T15:57:19.110Z</updated>
     
     <content type="html"><![CDATA[<p>在Hexo里面文章多了以后就会出现难以查找内容的问题，所以就需要一个站内搜索的功能。我大致看了一下NexT上支持的集中站内搜索引擎，<a href="https://swiftype.com/" target="_blank" rel="external">Swiftype</a>因为注册需要一个企业邮箱，而本人学生党并没有企业邮箱。<a href="http://tinysou.com/" target="_blank" rel="external">微搜索</a>好像主页崩了，一直登陆不上去。像百度，google这样的本地搜索UI设计实在是不堪入目。然后就选择了algolia。好在NexT 5.1以上的版本已经支持了algolia搜索，接入也比较的方便。</p>
 <p>这是一个法国初创公司做的，致力于在毫秒级时间内完成内容搜索，具体的细节可以上官方网站 <a href="https://www.algolia.com/" target="_blank" rel="external">algolia</a> 。搜索呈现像下面这样:</p>
