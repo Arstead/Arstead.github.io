@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-28T16:39:38.905Z</updated>
+  <updated>2017-01-29T12:27:57.583Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在Hexo中添加algolia search</title>
+    <link href="http://yoursite.com/2017/01/29/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_algolia_into_hexo/"/>
+    <id>http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/</id>
+    <published>2017-01-29T12:02:55.000Z</published>
+    <updated>2017-01-29T12:27:57.583Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="-技术 -Hexo" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF-Hexo/"/>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>一个人的能力(三)</title>
