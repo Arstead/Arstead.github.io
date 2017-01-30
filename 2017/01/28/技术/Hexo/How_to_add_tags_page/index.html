@@ -92,7 +92,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/01/28/技术/Hexo/How_to_add_tags_page/index.html">
 <meta property="og:site_name" content="Hi, Thinking">
 <meta property="og:description" content="添加标签和分类在Hexo中，有两种管理的方式，一种是使用分类的方式，这是一种有层次的分类方式，适用于大类别下套小类别的分类方式，例如：编程语言-python等。而还有一种是使用标签的方式，这种方式适用于同一级别的类别分类方式，例如：小说，论文等。对应于具体的文章，可以在Front-matter中进行设定，例如：">
-<meta property="og:updated_time" content="2017-01-29T16:02:30.061Z">
+<meta property="og:updated_time" content="2017-01-29T16:04:58.162Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在Hexo+NexT中添加标签和分类">
 <meta name="twitter:description" content="添加标签和分类在Hexo中，有两种管理的方式，一种是使用分类的方式，这是一种有层次的分类方式，适用于大类别下套小类别的分类方式，例如：编程语言-python等。而还有一种是使用标签的方式，这种方式适用于同一级别的类别分类方式，例如：小说，论文等。对应于具体的文章，可以在Front-matter中进行设定，例如：">
@@ -390,6 +390,17 @@
 
           
           
+             <span id="/2017/01/28/技术/Hexo/How_to_add_tags_page/" class="leancloud_visitors" data-flag-title="在Hexo+NexT中添加标签和分类">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -425,7 +436,7 @@
 <p>分类页的情况一样，需要把type属性改成categories</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: categories</div><div class="line">date: 2017-01-28 02:15:09 #时间随意</div><div class="line">type: categories</div><div class="line">---</div></pre></td></tr></table></figure>
 <p>完成修改之后重新生成部署即可。</p>
-<blockquote class="blockquote-center">完</blockquote>
+<blockquote class="blockquote-center">Kevin.记</blockquote>
       
     </div>
 
@@ -760,6 +771,113 @@
   
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("Ugy79wRgQMC8BIY6kd5UbCwN-gzGzoHsz", "G4JGQNreyikcpQyF88ujRpEN");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
