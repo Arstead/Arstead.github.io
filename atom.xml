@@ -137,7 +137,7 @@
     <link href="http://yoursite.com/2017/01/29/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_algolia_into_hexo/"/>
     <id>http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/</id>
     <published>2017-01-29T12:02:55.000Z</published>
-    <updated>2017-02-16T10:57:54.087Z</updated>
+    <updated>2017-02-16T12:11:02.019Z</updated>
     
     <content type="html"><![CDATA[<p>在Hexo里面文章多了以后就会出现难以查找内容的问题，所以就需要一个站内搜索的功能。我大致看了一下NexT上支持的集中站内搜索引擎，<a href="https://swiftype.com/" target="_blank" rel="external">Swiftype</a>因为注册需要一个企业邮箱，而本人学生党并没有企业邮箱。<a href="http://tinysou.com/" target="_blank" rel="external">微搜索</a>好像主页崩了，一直登陆不上去。像百度，google这样的本地搜索UI设计实在是不堪入目。然后就选择了algolia。好在NexT 5.1以上的版本已经支持了algolia搜索，接入也比较的方便。</p>
 <p>这是一个法国初创公司做的，致力于在毫秒级时间内完成内容搜索，具体的细节可以上官方网站 <a href="https://www.algolia.com/" target="_blank" rel="external">algolia</a> 。搜索呈现像下面这样:</p>
@@ -163,6 +163,8 @@
  <img src="/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/hexo_a_result.png" alt="hexo_a_result.png" title="">
 <p> 然后我们可以进入algolia的用户中心看一下是否内容已经提交上了。看一下红框中是否有内容。</p>
  <img src="/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/algolia_index.png" alt="algolia_index.png" title="">
+<p> 有时候可能发现没有上传到数据，在git bash中出现下面这样的显示，这个时候只需要先清理一下缓存，执行一下hexo clean，然后再执行hexo a提交站点即可。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">INFO  [Algolia] Identified 0 posts to index.</div></pre></td></tr></table></figure>
 <p> 这里要特别注意一下是否存在path字段，如果没有这个字段的话，搜索的时候会因为js无法检索到内容，而直接填入’undefine’，从而出现404异常。</p>
  <img src="/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/undefine.png" alt="undefine.png" title="">
 <p> 这个时候我们要进入.\hexo\node_modules\hexo-algolia\lib\command.js文件，添加path字段进storedPost变量中，</p>
