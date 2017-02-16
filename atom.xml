@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-16T10:44:24.074Z</updated>
+  <updated>2017-02-16T10:58:46.037Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/02/13/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Outliers_The_Story_of_Success/"/>
     <id>http://yoursite.com/2017/02/13/读书笔记/Outliers_The_Story_of_Success/</id>
     <published>2017-02-13T15:18:55.000Z</published>
-    <updated>2017-02-16T10:44:24.074Z</updated>
+    <updated>2017-02-16T10:58:46.037Z</updated>
     
     <content type="html"><![CDATA[<p><small><em>总字数：6573字，阅读时间：12分钟</em></small></p>
 <blockquote>
@@ -80,7 +80,7 @@
     
     </summary>
     
-      <category term="-读书笔记" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
     
       <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
@@ -92,7 +92,7 @@
     <link href="http://yoursite.com/2017/02/05/%E6%8A%80%E6%9C%AF/Python/python_source_code_analysis_0_preparation/"/>
     <id>http://yoursite.com/2017/02/05/技术/Python/python_source_code_analysis_0_preparation/</id>
     <published>2017-02-04T16:24:58.000Z</published>
-    <updated>2017-02-04T18:37:47.466Z</updated>
+    <updated>2017-02-16T10:58:31.677Z</updated>
     
     <content type="html"><![CDATA[<h4 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h4><p>原想着这个寒假主要的学习任务就是阅读python源码，但是碍于一直在写论文，现在才开始着手学习。其实想看python源码的目的很简单，一来对python很感兴趣，想了解它的工作原理。二来以后可能也想从事这方面的工作，所以希望能加深对python的理解。关于阅读源码的总结也会记录下来，跟大家一块分享。这里主要分析的python源码是3.6.0版本的，如果在分析中出现了由于版本不同所带来的问题，欢迎大家一块讨论。<br>阅读源码一定要有目的性，特别是这种大型的编译系统。所以在这里列下一个阅读目标列表及记录完成时间，这个列表也会随着我阅读的情况不断更新。最后的文章也会根据这个的顺序来排布。</p>
 <ol>
@@ -130,8 +130,6 @@
     
       <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
   </entry>
   
   <entry>
@@ -139,7 +137,7 @@
     <link href="http://yoursite.com/2017/01/29/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_algolia_into_hexo/"/>
     <id>http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/</id>
     <published>2017-01-29T12:02:55.000Z</published>
-    <updated>2017-02-16T10:51:46.455Z</updated>
+    <updated>2017-02-16T10:57:54.087Z</updated>
     
     <content type="html"><![CDATA[<p>在Hexo里面文章多了以后就会出现难以查找内容的问题，所以就需要一个站内搜索的功能。我大致看了一下NexT上支持的集中站内搜索引擎，<a href="https://swiftype.com/" target="_blank" rel="external">Swiftype</a>因为注册需要一个企业邮箱，而本人学生党并没有企业邮箱。<a href="http://tinysou.com/" target="_blank" rel="external">微搜索</a>好像主页崩了，一直登陆不上去。像百度，google这样的本地搜索UI设计实在是不堪入目。然后就选择了algolia。好在NexT 5.1以上的版本已经支持了algolia搜索，接入也比较的方便。</p>
 <p>这是一个法国初创公司做的，致力于在毫秒级时间内完成内容搜索，具体的细节可以上官方网站 <a href="https://www.algolia.com/" target="_blank" rel="external">algolia</a> 。搜索呈现像下面这样:</p>
@@ -196,7 +194,9 @@
     
     </summary>
     
-      <category term="-技术 -Hexo" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF-Hexo/"/>
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
     
     
       <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
@@ -208,7 +208,7 @@
     <link href="http://yoursite.com/2017/01/29/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/(%E4%B8%89)/"/>
     <id>http://yoursite.com/2017/01/29/小说/一个人的能力/(三)/</id>
     <published>2017-01-28T16:37:55.000Z</published>
-    <updated>2017-02-16T10:43:57.433Z</updated>
+    <updated>2017-02-16T10:58:07.253Z</updated>
     
     <content type="html"><![CDATA[<p>欧阳时家境不算好，</p>
 <blockquote class="blockquote-center">Kevin.记</blockquote>]]></content>
@@ -220,7 +220,9 @@
     
     </summary>
     
-      <category term="-小说 -一个人的能力" scheme="http://yoursite.com/categories/%E5%B0%8F%E8%AF%B4-%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/"/>
+      <category term="小说" scheme="http://yoursite.com/categories/%E5%B0%8F%E8%AF%B4/"/>
+    
+      <category term="一个人的能力" scheme="http://yoursite.com/categories/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/"/>
     
     
       <category term="小说" scheme="http://yoursite.com/tags/%E5%B0%8F%E8%AF%B4/"/>
@@ -232,7 +234,7 @@
     <link href="http://yoursite.com/2017/01/28/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_tags_page/"/>
     <id>http://yoursite.com/2017/01/28/技术/Hexo/How_to_add_tags_page/</id>
     <published>2017-01-28T10:02:55.000Z</published>
-    <updated>2017-02-16T10:51:38.761Z</updated>
+    <updated>2017-02-16T10:57:53.184Z</updated>
     
     <content type="html"><![CDATA[<h3 id="添加标签和分类"><a href="#添加标签和分类" class="headerlink" title="添加标签和分类"></a>添加标签和分类</h3><p>在Hexo中，有两种管理的方式，一种是使用分类的方式，这是一种有层次的分类方式，适用于大类别下套小类别的分类方式，例如：编程语言-python等。而还有一种是使用标签的方式，这种方式适用于同一级别的类别分类方式，例如：小说，论文等。<br>对应于具体的文章，可以在Front-matter中进行设定，例如：</p>
 <a id="more"></a>
@@ -261,7 +263,9 @@
     
     </summary>
     
-      <category term="-技术 -Hexo" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF-Hexo/"/>
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
     
     
       <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
@@ -273,7 +277,7 @@
     <link href="http://yoursite.com/2017/01/27/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/(%E4%BA%8C)/"/>
     <id>http://yoursite.com/2017/01/27/小说/一个人的能力/(二)/</id>
     <published>2017-01-27T11:06:55.000Z</published>
-    <updated>2017-02-16T10:43:51.764Z</updated>
+    <updated>2017-02-16T10:58:11.974Z</updated>
     
     <content type="html"><![CDATA[<p>上午最后一节课总是显得那么漫长，特别还是数学课的时候，大家一边将老师写在黑板上的公式抄到笔记本之中，一边偷瞄墙上挂的时钟。等着秒钟一步一步的向前走，走完一圈又回到原点，好像时间又回到了最初的原点一般，停滞不前。终于，下课铃声响起，而老师上课的内容也基本讲完，高中的老师总是喜欢来下课之后再多占用一点时间，而刘老师也是一样，“我把作业布置完咱们就下课，今天做完习题册圆锥曲线最后的双曲线部分，每一个人最好都去推导一下三种圆锥曲线的表达式是怎么来的，有助于你们对这部分内容的理解，下课”。靠门边的同学像是听到了一声哨响一般，直接提着包冲出了教室。而李情旭，依旧默默的坐在那，回顾着刚刚上课记得笔记。“你怎么知道这节课老师心情不好的呀？”胡梦边收拾书包，边跟他闲扯。“因为我有超能力。”李情旭没有回头，一本正经的说出这句话。“你再扯，我吃饭去啦，拜拜”胡梦认为他在开玩笑，就打算去吃饭了。“拜”李情旭看着胡梦的背影默默的离开。</p>
 <a id="more"></a>
@@ -288,7 +292,9 @@
     
     </summary>
     
-      <category term="-小说 -一个人的能力" scheme="http://yoursite.com/categories/%E5%B0%8F%E8%AF%B4-%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/"/>
+      <category term="小说" scheme="http://yoursite.com/categories/%E5%B0%8F%E8%AF%B4/"/>
+    
+      <category term="一个人的能力" scheme="http://yoursite.com/categories/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/"/>
     
     
       <category term="小说" scheme="http://yoursite.com/tags/%E5%B0%8F%E8%AF%B4/"/>
@@ -300,7 +306,7 @@
     <link href="http://yoursite.com/2017/01/27/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/(%E4%B8%80)/"/>
     <id>http://yoursite.com/2017/01/27/小说/一个人的能力/(一)/</id>
     <published>2017-01-27T10:51:55.000Z</published>
-    <updated>2017-02-16T10:44:00.730Z</updated>
+    <updated>2017-02-16T10:58:03.429Z</updated>
     
     <content type="html"><![CDATA[<p>老师伴着上课的曲子进门，班长李情旭看了一眼老师，扭头对同桌胡梦说：“这节课别睡觉了，刘老师心情很不好”。老师走上讲台，把考试卷子放在讲台桌子上，把U盘插在电脑上，像往常一样， 准备把上课的课件拷到电脑上。《土耳其进行曲》还在耳边回荡，也不清楚这所学校为什么要用这个曲子作为上课的铃声。估计是它的节奏比较欢快，能让人产生一种愉悦的心情以面对接下来四十五分钟的枯燥。老师还在操作着电脑，课间喧闹的气氛还没有消散，大家都七嘴八舌的讨论着。胡梦抬了抬头，看了看老师，像往常一样，没有任何的变化。胡梦又把头低了下来，枕在自己的手上。嘟囔了一句:“别闹”。李情旭也没有再理睡梦中的同桌，把目光转向投影出来的电脑画面。</p>
 <a id="more"></a>
@@ -320,7 +326,9 @@
     
     </summary>
     
-      <category term="-小说 -一个人的能力" scheme="http://yoursite.com/categories/%E5%B0%8F%E8%AF%B4-%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/"/>
+      <category term="小说" scheme="http://yoursite.com/categories/%E5%B0%8F%E8%AF%B4/"/>
+    
+      <category term="一个人的能力" scheme="http://yoursite.com/categories/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/"/>
     
     
       <category term="小说" scheme="http://yoursite.com/tags/%E5%B0%8F%E8%AF%B4/"/>
