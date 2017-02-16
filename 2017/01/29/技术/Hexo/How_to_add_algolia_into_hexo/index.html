@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="小说," />
+  <meta name="keywords" content="技术," />
 
 
 
@@ -86,16 +86,24 @@
 
 
 
-<meta name="description" content="老师伴着上课的曲子进门，班长李情旭看了一眼老师，扭头对同桌胡梦说：“这节课别睡觉了，刘老师心情很不好”。老师走上讲台，把考试卷子放在讲台桌子上，把U盘插在电脑上，像往常一样， 准备把上课的课件拷到电脑上。《土耳其进行曲》还在耳边回荡，也不清楚这所学校为什么要用这个曲子作为上课的铃声。估计是它的节奏比较欢快，能让人产生一种愉悦的心情以面对接下来四十五分钟的枯燥。老师还在操作着电脑，课间喧闹的气氛还没">
+<meta name="description" content="在Hexo里面文章多了以后就会出现难以查找内容的问题，所以就需要一个站内搜索的功能。我大致看了一下NexT上支持的集中站内搜索引擎，Swiftype因为注册需要一个企业邮箱，而本人学生党并没有企业邮箱。微搜索好像主页崩了，一直登陆不上去。像百度，google这样的本地搜索UI设计实在是不堪入目。然后就选择了algolia。好在NexT 5.1以上的版本已经支持了algolia搜索，接入也比较的方便">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一个人的能力(一)">
-<meta property="og:url" content="http://yoursite.com/2017/01/27/小说/一个人的能力/(一)/index.html">
+<meta property="og:title" content="在Hexo+NexT中添加algolia search">
+<meta property="og:url" content="http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/index.html">
 <meta property="og:site_name" content="Hi, Thinking">
-<meta property="og:description" content="老师伴着上课的曲子进门，班长李情旭看了一眼老师，扭头对同桌胡梦说：“这节课别睡觉了，刘老师心情很不好”。老师走上讲台，把考试卷子放在讲台桌子上，把U盘插在电脑上，像往常一样， 准备把上课的课件拷到电脑上。《土耳其进行曲》还在耳边回荡，也不清楚这所学校为什么要用这个曲子作为上课的铃声。估计是它的节奏比较欢快，能让人产生一种愉悦的心情以面对接下来四十五分钟的枯燥。老师还在操作着电脑，课间喧闹的气氛还没">
-<meta property="og:updated_time" content="2017-02-16T10:44:00.730Z">
+<meta property="og:description" content="在Hexo里面文章多了以后就会出现难以查找内容的问题，所以就需要一个站内搜索的功能。我大致看了一下NexT上支持的集中站内搜索引擎，Swiftype因为注册需要一个企业邮箱，而本人学生党并没有企业邮箱。微搜索好像主页崩了，一直登陆不上去。像百度，google这样的本地搜索UI设计实在是不堪入目。然后就选择了algolia。好在NexT 5.1以上的版本已经支持了algolia搜索，接入也比较的方便">
+<meta property="og:image" content="http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/result.png">
+<meta property="og:image" content="http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/algolia.png">
+<meta property="og:image" content="http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/key.png">
+<meta property="og:image" content="http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/hexo_a_result.png">
+<meta property="og:image" content="http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/algolia_index.png">
+<meta property="og:image" content="http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/undefine.png">
+<meta property="og:image" content="http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/black.png">
+<meta property="og:updated_time" content="2017-02-16T10:51:46.455Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一个人的能力(一)">
-<meta name="twitter:description" content="老师伴着上课的曲子进门，班长李情旭看了一眼老师，扭头对同桌胡梦说：“这节课别睡觉了，刘老师心情很不好”。老师走上讲台，把考试卷子放在讲台桌子上，把U盘插在电脑上，像往常一样， 准备把上课的课件拷到电脑上。《土耳其进行曲》还在耳边回荡，也不清楚这所学校为什么要用这个曲子作为上课的铃声。估计是它的节奏比较欢快，能让人产生一种愉悦的心情以面对接下来四十五分钟的枯燥。老师还在操作着电脑，课间喧闹的气氛还没">
+<meta name="twitter:title" content="在Hexo+NexT中添加algolia search">
+<meta name="twitter:description" content="在Hexo里面文章多了以后就会出现难以查找内容的问题，所以就需要一个站内搜索的功能。我大致看了一下NexT上支持的集中站内搜索引擎，Swiftype因为注册需要一个企业邮箱，而本人学生党并没有企业邮箱。微搜索好像主页崩了，一直登陆不上去。像百度，google这样的本地搜索UI设计实在是不堪入目。然后就选择了algolia。好在NexT 5.1以上的版本已经支持了algolia搜索，接入也比较的方便">
+<meta name="twitter:image" content="http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/result.png">
 
 
 
@@ -123,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/01/27/小说/一个人的能力/(一)/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/"/>
 
 
 
 
 
-  <title> 一个人的能力(一) | Hi, Thinking </title>
+  <title> 在Hexo+NexT中添加algolia search | Hi, Thinking </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -319,7 +327,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/27/小说/一个人的能力/(一)/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Kevin">
@@ -343,7 +351,7 @@
             
             
               
-                一个人的能力(一)
+                在Hexo+NexT中添加algolia search
               
             
           </h1>
@@ -358,8 +366,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-27T18:51:55+08:00">
-                2017-01-27
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-29T20:02:55+08:00">
+                2017-01-29
               </time>
             
 
@@ -381,8 +389,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/小说-一个人的能力/" itemprop="url" rel="index">
-                    <span itemprop="name">-小说 -一个人的能力</span>
+                  <a href="/categories/技术-Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">-技术 -Hexo</span>
                   </a>
                 </span>
 
@@ -393,12 +401,24 @@
           
 
           
-
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
+
           
-             <span id="/2017/01/27/小说/一个人的能力/(一)/" class="leancloud_visitors" data-flag-title="一个人的能力(一)">
+          
+             <span id="/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/" class="leancloud_visitors" data-flag-title="在Hexo+NexT中添加algolia search">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -425,17 +445,52 @@
       
 
       
-        <p>老师伴着上课的曲子进门，班长李情旭看了一眼老师，扭头对同桌胡梦说：“这节课别睡觉了，刘老师心情很不好”。老师走上讲台，把考试卷子放在讲台桌子上，把U盘插在电脑上，像往常一样， 准备把上课的课件拷到电脑上。《土耳其进行曲》还在耳边回荡，也不清楚这所学校为什么要用这个曲子作为上课的铃声。估计是它的节奏比较欢快，能让人产生一种愉悦的心情以面对接下来四十五分钟的枯燥。老师还在操作着电脑，课间喧闹的气氛还没有消散，大家都七嘴八舌的讨论着。胡梦抬了抬头，看了看老师，像往常一样，没有任何的变化。胡梦又把头低了下来，枕在自己的手上。嘟囔了一句:“别闹”。李情旭也没有再理睡梦中的同桌，把目光转向投影出来的电脑画面。</p>
+        <p>在Hexo里面文章多了以后就会出现难以查找内容的问题，所以就需要一个站内搜索的功能。我大致看了一下NexT上支持的集中站内搜索引擎，<a href="https://swiftype.com/" target="_blank" rel="external">Swiftype</a>因为注册需要一个企业邮箱，而本人学生党并没有企业邮箱。<a href="http://tinysou.com/" target="_blank" rel="external">微搜索</a>好像主页崩了，一直登陆不上去。像百度，google这样的本地搜索UI设计实在是不堪入目。然后就选择了algolia。好在NexT 5.1以上的版本已经支持了algolia搜索，接入也比较的方便。</p>
+<p>这是一个法国初创公司做的，致力于在毫秒级时间内完成内容搜索，具体的细节可以上官方网站 <a href="https://www.algolia.com/" target="_blank" rel="external">algolia</a> 。搜索呈现像下面这样:</p>
+<img src="/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/result.png" alt="result.png" title="">
 <a id="more"></a>
-<p>这个班级的座位与大多数中学相同，每两排座位靠拢成一个大排，一共四大排，每个大排中间留出够一个人正常通行的空隙。而投影的位置在靠近窗户的位置，大概在第三大排的前方偏左。他们俩的位置在第三排的第二行。李情旭坐在左边，胡梦在右边。刘老师则在胡梦旁边过道的正前方。</p>
-<p>这位老师姓刘，全名叫刘蕊，是一位年轻有为的女老师，不到三十岁就已经评上了国家特级教师，讲的是数学课，教学主张因材施教，在她的心中，每一个人都有其所能适应的教学方式，有些人给一些压力，才能将心思放在学习上，有一些人需要鼓励，才能进步，给压力反倒会让他们手足无措。还有一些人自我约束能力强，自己能把控好自己，约束过多了反倒会产生叛逆心理。李情旭属于第一种人，而胡梦则是第二种。在胡梦眼中，刘老师是一个和蔼可亲的人，经常找自己谈心，所以她的课 是胡梦最放松的课。</p>
-<p>投影里显示着老师的操作，与往常不同的是，这次刘老师除了从U盘里拷贝了一个课件文档以外，还拷贝了一份表格文档。他将表格文档打开，每个人的学号，姓名，每道题的得分赫然投影到幕布之上。他抬起头，把两只手放在桌子上，静静的看着下面的同学。大家还在喧闹着，慢慢的，一些同学注意到了老师的举动，逐渐降低了自己的音量。但是，教室里依旧存在着细声细语。似乎总有那么一些人，无法控制住自己，总想把自己心里的八卦说出来。第二排第二行的高忆侧了下头，低声对着同桌柳知说：“昨天她的鬓发上就缠着那个线头，今天还在那，她昨天晚上一定没有洗头”。柳知一脸诧异的看着她：“这你都记得，你每天都在看些什么啊”。“你们什么时候停下来，我什么时候开始上课。”说完这话，刘老师坐了下来，静静的看着每一个人。大家看着讲台上表情严肃的老师，都知道情况不对。教室一时间变得十分寂静，没有任何的声响，电扇的声音在头顶上盘旋。</p>
-<p>“你们怎么不讲了，继续讲呀”带着挑衅的语气，她的这句话划破了死一般的寂静。如果说刚才的沉默让每一个人都神情紧张，那么现在，每一个人已经开始畏惧。大家都低下了头，生怕与老师有过多的眼神接触。“你们看看你们的成绩”，刘老师抬起了手，不停的点着投影在幕布上的表格。大家都抬起了头，努力的寻找自己的名字，看看自己处在一个什么样的位置。</p>
-<p>实际上，这个班的数学成绩一直是全校排名第一，但是刘老师认为，如果一直只看全校成绩，第一名的优越感容易让大家松懈下来，迟早会被人超越。所以，她自己设计了一种成绩表示，她称之为自比分。每次考试之后，根据全年级的平均分，确定这次考试的难度系数，然后将每个人的成绩统一到同一难度系数的分值下。然后每次考试的成绩都是这次考试对上次考试的分数差值。自比分强调每个人应该与自己做比较，正值说明你在进步，负值说明你在退步。而这次考试，除了胡梦，高忆和欧阳时，其他人都是负值。但是高忆和欧阳时是满分，而胡梦依旧是全班最后一名。</p>
-<p>刘老师等着同学们寻找自己的名字，她环顾四周，看着大家脸上的表情。这时发现胡梦趴在那，大吼了一声，”胡梦”，胡梦猛的抬起了头，眼神充满着惊恐。”别以为你自比分高就心安理得了，你现在成绩还是全班最后一名，你努力的还不够。” 其实，胡梦并不知道自己的自比分到底是多少，听到刘老师这么一说，才看向投影里的成绩表，原来自己的自比分相较于上一次考试高了一个档位，在全校的排名也前进了一百多名。虽然刚刚被老师说了一通，但是看到这个分数心里还是很高兴的。</p>
-<p>“好了，还想看成绩的同学下课再看，我们现在开始讲试卷，班长，把这些试卷发下去。”刘老师边说边把电脑上的表格文件关掉。李情旭走到老师旁边，拿走了一打试卷，分发给大家。</p>
-<p>回到桌位上，李情旭看了一眼胡梦，胡梦拿到自己的试卷，嘟囔了一句:”这样真的有效。”，”什么有效？”李情旭很不解的看着她。”没啥”。胡梦抬起头，看向老师。而李情旭微微一笑，也转头看向了老师。</p>
+<h3 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h3><ol>
+<li><p>首先，上 <a href="https://www.algolia.com/" target="_blank" rel="external">algolia</a> 上注册一个账号，免费注册的账号可以试用14天，这期间所有的高级功能均可以使用。过了这个期限之后，只有部分功能可以使用，免费账户总共有10,000条记录，每个月有100,000的可操作数，对于一般用户应该是够用了。</p>
+<p> 注册了账户之后，页面如下图所示，点击NEW INDEX。需要输入一个index name， 注意这个名字最好只包含字母，数字和下划线(_)，因为后端用js调用数据的时候需要用到这个index name，所以如果这个字符串里面出现了一些跟js语法像冲突的符号很有可能识别不了。</p>
+ <img src="/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/algolia.png" alt="algolia.png" title="">
+</li>
+<li><p>完成之后，点击左边那个像钥匙一样的图标，查看自己的API Keys。注意Admin API Key是私密保存的，可以点击右边的小图标进行复制。</p>
+ <img src="/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/key.png" alt="key.png" title="">
+</li>
+<li><p>进入站点配置文件_config.yml，在后面加入下面这些内容，其中将具体的值换成自己的Keys，注:不需要引号。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># website search</div><div class="line">## algolia</div><div class="line">algolia:</div><div class="line">  applicationID: &apos;your_Application_ID&apos;</div><div class="line">  apiKey: &apos;your_Search-Only_API_Key&apos;</div><div class="line">  adminApiKey: &apos;your_Admin_API_Key&apos;</div><div class="line">  indexName: &apos;your_Index_Name&apos;</div><div class="line">  chunkSize: 5000</div></pre></td></tr></table></figure>
+</li>
+<li><p>进入git bash，在根目录下安装algolia。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-algolia --save</div></pre></td></tr></table></figure>
+</li>
+<li><p>在hexo目录下提交站点。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo algolia #等价于hexo a</div></pre></td></tr></table></figure>
+<p> 产生的结果大致如下:</p>
+ <img src="/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/hexo_a_result.png" alt="hexo_a_result.png" title="">
+<p> 然后我们可以进入algolia的用户中心看一下是否内容已经提交上了。看一下红框中是否有内容。</p>
+ <img src="/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/algolia_index.png" alt="algolia_index.png" title="">
+<p> 这里要特别注意一下是否存在path字段，如果没有这个字段的话，搜索的时候会因为js无法检索到内容，而直接填入’undefine’，从而出现404异常。</p>
+ <img src="/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/undefine.png" alt="undefine.png" title="">
+<p> 这个时候我们要进入.\hexo\node_modules\hexo-algolia\lib\command.js文件，添加path字段进storedPost变量中，</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var storedPost = _.pick(data, [&apos;title&apos;, &apos;date&apos;, &apos;slug&apos;, &apos;path&apos;, &apos;content&apos;, &apos;excerpt&apos;, &apos;permalink&apos;]);</div></pre></td></tr></table></figure>
+<p> 然后重新提交站点即可。</p>
+</li>
+<li><p>最后进入主题配置文件，找到algolia_search选项，将enable字段值改为true。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"># Algolia Search</div><div class="line">algolia_search:</div><div class="line">  enable: true</div><div class="line">  hits:</div><div class="line">    per_page: 10</div><div class="line">  labels:</div><div class="line">    input_placeholder: Search for Posts</div><div class="line">    hits_empty: &quot;We didn&apos;t find any results for the search: $&#123;query&#125;&quot;</div><div class="line">    hits_stats: &quot;$&#123;hits&#125; results found in $&#123;time&#125; ms&quot;</div></pre></td></tr></table></figure>
+<p> 最后重新生产站点，重新部署就完成了。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g -d</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><h4 id="页面空白"><a href="#页面空白" class="headerlink" title="页面空白"></a>页面空白</h4><p>在安装的时候出现了文章内容加载不出来，但是查看源码的时候HTML是完整的，而且对应位置的链接也可以，如下图一样：</p>
+<img src="/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/black.png" alt="black.png" title="">
+<p>查看加载情况的时候发现js调用异常，发现是因为index name里面包含了引号，导致algolia后端的js出现异常，所以页面加载出现问题。这个时候只需要修改一下index name就可以了。</p>
+<h4 id="搜索后无法正确跳转"><a href="#搜索后无法正确跳转" class="headerlink" title="搜索后无法正确跳转"></a>搜索后无法正确跳转</h4><p>搜索后出现无法正确跳转的原因是algolia没有获取path字段，所以最后的跳转地址没有正确填充，有可能会出现点击没有反应，也有可能像上文中提到的出现404异常，这个时候只需要按上文所说，在.\hexo\node_modules\hexo-algolia\lib\command.js文件里，添加path字段到storedPost变量中即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var storedPost = _.pick(data, [&apos;title&apos;, &apos;date&apos;, &apos;slug&apos;, &apos;path&apos;, &apos;content&apos;, &apos;excerpt&apos;, &apos;permalink&apos;]);</div></pre></td></tr></table></figure>
 <blockquote class="blockquote-center">Kevin.记</blockquote>
+
+
+
+
       
     </div>
 
@@ -449,7 +504,7 @@
       
         <div class="copyright">
         <p><span>
-        <b>本文地址：</b><a href="/2017/01/27/小说/一个人的能力/(一)/" title="一个人的能力(一)">/2017/01/27/小说/一个人的能力/(一)/</a>
+        <b>本文地址：</b><a href="/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/" title="在Hexo+NexT中添加algolia search">/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/</a>
         <br/>
         <b>转载请注明出处   ---By Kevin</b>
         </span></p>
@@ -468,7 +523,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/小说/" rel="tag"># 小说</a>
+            <a href="/tags/技术/" rel="tag"># 技术</a>
           
         </div>
       
@@ -477,8 +532,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/22/Preface/" rel="next" title="序">
-                <i class="fa fa-chevron-left"></i> 序
+              <a href="/2017/01/29/小说/一个人的能力/(三)/" rel="next" title="一个人的能力(三)">
+                <i class="fa fa-chevron-left"></i> 一个人的能力(三)
               </a>
             
           </div>
@@ -487,8 +542,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/01/27/小说/一个人的能力/(二)/" rel="prev" title="一个人的能力(二)">
-                一个人的能力(二) <i class="fa fa-chevron-right"></i>
+              <a href="/2017/02/05/技术/Python/python_source_code_analysis_0_preparation/" rel="prev" title="python源码解析(0)-准备工作">
+                python源码解析(0)-准备工作 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -519,6 +574,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -538,8 +604,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -608,6 +683,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装过程"><span class="nav-number">1.</span> <span class="nav-text">安装过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#异常处理"><span class="nav-number">2.</span> <span class="nav-text">异常处理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#页面空白"><span class="nav-number">2.1.</span> <span class="nav-text">页面空白</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#搜索后无法正确跳转"><span class="nav-number">2.2.</span> <span class="nav-text">搜索后无法正确跳转</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
@@ -727,9 +818,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'kevinw';
-      var disqus_identifier = '2017/01/27/小说/一个人的能力/(一)/';
+      var disqus_identifier = '2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/';
 
-      var disqus_title = "一个人的能力(一)";
+      var disqus_title = "在Hexo+NexT中添加algolia search";
 
 
       function run_disqus_script(disqus_script) {
@@ -742,6 +833,13 @@
 
       run_disqus_script('count.js');
 
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
       
 
     </script>
