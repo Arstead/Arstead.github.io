@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-26T09:37:44.569Z</updated>
+  <updated>2017-02-26T09:43:53.656Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,13 +20,14 @@
     <link href="http://yoursite.com/2017/02/26/%E6%8A%80%E6%9C%AF/Python/build_python_environment_with_sublime_text/"/>
     <id>http://yoursite.com/2017/02/26/技术/Python/build_python_environment_with_sublime_text/</id>
     <published>2017-02-26T06:00:58.000Z</published>
-    <updated>2017-02-26T09:37:44.569Z</updated>
+    <updated>2017-02-26T09:43:53.656Z</updated>
     
     <content type="html"><![CDATA[<p>自从学习了Python之后，一直想找一个好的Python IDE环境，但是一直没有找到心仪的。我认为，程序员一定要对自己好一点，每天面对的编程界面一定要赏心悦目，不然如何面对一天的工作。Pycharm的工作界面略显难看，换了各种主题都没有找到合适的，而且Pycharm实在有点大，很多功能用不上，却让运行变得很卡。也曾经使用过一段时间VS (visual studio 2015)，对于曾经的C++程序员而言，VS的用户界面还是让我觉得很舒心的，但是VS新接入python时间不长，出现的很多问题很难找到合适的解决方案。还用过Eclipse+pydev的方式，但是我在学习Java的时候就觉得Eclipse的界面真的不是一般的难看。最后我放弃了所有的IDE，用Sublime Text 3来编写python程序，然后直接内嵌一个编译器来实现查看编译结果。但是每次调试的方法都是用print各种变量的方式来看，效率低下。终于，我找到了一个合适的插件，能方便的调用PDB调试程序，现在写Python整个人都是开心的。</p>
 <h3 id="Sublime-Text-3"><a href="#Sublime-Text-3" class="headerlink" title="Sublime Text 3"></a>Sublime Text 3</h3><p><a href="https://www.sublimetext.com/3" target="_blank" rel="external">ST3 (Sublime Text 3)</a> 是一个跨平台的文本编辑器，以其丰富的快捷键和灵活的插件著称，使用起来相当的方便。而且我认为，ST3是我见过最漂亮的文本编辑器。这个编译器自带了很多的编程语言的高亮显示，C/C++，Python，Java，Matlab等等。在这个界面的吸引下，我决定转投ST3的旗下。</p>
 <img src="/2017/02/26/技术/Python/build_python_environment_with_sublime_text/main_UI.png" alt="main_UI.png" title="">
 <p>可以看到，中间是主要的编程界面，左边是工作目录，右边上面是PDB的调试界面，右边下面是Python的交互式界面。将编程界面用来专心写程序，程序的编写过程中如果遇到什么语言方面或者库内容方面的问题，可以在右下角的交互式界面中进行查看。代码编写完之后，可以在右上角用PDB进行调试，而且在调试的时候也可以很方便的查看代码。并且可以根据工作目录来查看工程下其他的源码。在ST3中，其可以通过右键跳转到函数的定义之中，可以方便的查看函数内容。并在结合ST3中自带的各种快捷键，编码效率相当高。有兴趣的同学可以看看这份<a href="https://docs.sublimetext.info/en/latest/index.html" target="_blank" rel="external">非官方教程</a>，和它的<a href="http://sublime-text.readthedocs.io/en/latest/getting_started/install.html" target="_blank" rel="external">中文版非官方教程</a></p>
 <p>具体的安装方法在教程里面都有，可以在里面看，安装这个不是我要讲的主要内容，所以在这就不提了。遇到问题的话可以谷歌一下，基本上没有什么问题。</p>
+<a id="more"></a>
 <h3 id="SublimeREPL"><a href="#SublimeREPL" class="headerlink" title="SublimeREPL"></a>SublimeREPL</h3><p><a href="https://sublimerepl.readthedocs.io/en/latest/" target="_blank" rel="external">SublimeREPL</a>是ST中的一个插件，它可以让我们在ST中运行解释器（REPL），而且对Python还有特别的支持，能运行选中的代码并且启动PDB调试。</p>
 <p>我们可以使用Package Control来安装这个，在ST3中使用快捷键Ctrl+Shift+P，调出Package Control界面，不想用快捷键的可以在Preferences-&gt;Package Control中调出。在输入框输入Install Package。</p>
 <img src="/2017/02/26/技术/Python/build_python_environment_with_sublime_text/pcip.png" alt="pcip.png" title="">
@@ -47,62 +48,17 @@
     
     <summary type="html">
     
-      &lt;p&gt;自从学习了Python之后，一直想找一个好的Python IDE环境，但是一直没有找到心仪的。我认为，程序员一定要对自己好一点，每天面对的编程界面一定要赏心悦目，不然如何面对一天的工作。Pycharm的工作界面略显难看，换了各种主题都没有找到合适的，而且Pycharm实在有
+      &lt;p&gt;自从学习了Python之后，一直想找一个好的Python IDE环境，但是一直没有找到心仪的。我认为，程序员一定要对自己好一点，每天面对的编程界面一定要赏心悦目，不然如何面对一天的工作。Pycharm的工作界面略显难看，换了各种主题都没有找到合适的，而且Pycharm实在有点大，很多功能用不上，却让运行变得很卡。也曾经使用过一段时间VS (visual studio 2015)，对于曾经的C++程序员而言，VS的用户界面还是让我觉得很舒心的，但是VS新接入python时间不长，出现的很多问题很难找到合适的解决方案。还用过Eclipse+pydev的方式，但是我在学习Java的时候就觉得Eclipse的界面真的不是一般的难看。最后我放弃了所有的IDE，用Sublime Text 3来编写python程序，然后直接内嵌一个编译器来实现查看编译结果。但是每次调试的方法都是用print各种变量的方式来看，效率低下。终于，我找到了一个合适的插件，能方便的调用PDB调试程序，现在写Python整个人都是开心的。&lt;/p&gt;
+&lt;h3 id=&quot;Sublime-Text-3&quot;&gt;&lt;a href=&quot;#Sublime-Text-3&quot; class=&quot;headerlink&quot; title=&quot;Sublime Text 3&quot;&gt;&lt;/a&gt;Sublime Text 3&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://www.sublimetext.com/3&quot;&gt;ST3 (Sublime Text 3)&lt;/a&gt; 是一个跨平台的文本编辑器，以其丰富的快捷键和灵活的插件著称，使用起来相当的方便。而且我认为，ST3是我见过最漂亮的文本编辑器。这个编译器自带了很多的编程语言的高亮显示，C/C++，Python，Java，Matlab等等。在这个界面的吸引下，我决定转投ST3的旗下。&lt;/p&gt;
+&lt;img src=&quot;/2017/02/26/技术/Python/build_python_environment_with_sublime_text/main_UI.png&quot; alt=&quot;main_UI.png&quot; title=&quot;&quot;&gt;
+&lt;p&gt;可以看到，中间是主要的编程界面，左边是工作目录，右边上面是PDB的调试界面，右边下面是Python的交互式界面。将编程界面用来专心写程序，程序的编写过程中如果遇到什么语言方面或者库内容方面的问题，可以在右下角的交互式界面中进行查看。代码编写完之后，可以在右上角用PDB进行调试，而且在调试的时候也可以很方便的查看代码。并且可以根据工作目录来查看工程下其他的源码。在ST3中，其可以通过右键跳转到函数的定义之中，可以方便的查看函数内容。并在结合ST3中自带的各种快捷键，编码效率相当高。有兴趣的同学可以看看这份&lt;a href=&quot;https://docs.sublimetext.info/en/latest/index.html&quot;&gt;非官方教程&lt;/a&gt;，和它的&lt;a href=&quot;http://sublime-text.readthedocs.io/en/latest/getting_started/install.html&quot;&gt;中文版非官方教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;具体的安装方法在教程里面都有，可以在里面看，安装这个不是我要讲的主要内容，所以在这就不提了。遇到问题的话可以谷歌一下，基本上没有什么问题。&lt;/p&gt;
     
     </summary>
     
       <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
       <category term="python" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/python/"/>
-    
-    
-      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Keras源码解析(1)-底层结构</title>
-    <link href="http://yoursite.com/2017/02/18/%E6%8A%80%E6%9C%AF/Keras/keras_source_code_analysis_1_Infrastructures/"/>
-    <id>http://yoursite.com/2017/02/18/技术/Keras/keras_source_code_analysis_1_Infrastructures/</id>
-    <published>2017-02-18T11:54:58.000Z</published>
-    <updated>2017-02-26T09:39:51.313Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h4><p>刚开始接触机器学习的时候，曾经试过用python写过一个简单的MLP（Multi-Layer Perceptron），其中仅仅只是实现了简单的Gradient descent算法，激活函数上也只涉及了Sigmod激活函数。在这之后的很多研究中，都是用的现成的算法库在跑，完全接触不到实现方法，编程能力也急剧下降。所以趁着现在有点时间，认真学习一下别人是怎么样实现深度学习方法的。由于我一直使用的是python语言，而且我在入门深度学习的时候也是从Keras这个库开始的。自从被TensorFlow列为官网API之后，Keras使用的人也极具上升。所以决定从Keras源码开始看起，学习一下别人是如何实现深度学习框架的。</p>
-<p>由于我是即兴记录的，目前还没有任何的目标。所以可能会出现结构上有些凌乱，等我都掌握了之后，我再做整理吧。</p>
-<h4 id="文档结构"><a href="#文档结构" class="headerlink" title="文档结构"></a>文档结构</h4><p>我们先来看看Keras下的文档结构。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">|-- docs                #说明文档</div><div class="line">|-- examples            #应用示例</div><div class="line">|-- test                #测试文件</div><div class="line">|-- keras               #源码核心</div><div class="line">|  |-- backend          #底层backend</div><div class="line">|  |-- datasets         #数据获取源码</div><div class="line">|  |-- engine           #核心工具</div><div class="line">|  |-- layers           #层源码</div><div class="line">|  |-- legacy           #遗留源码</div><div class="line">|  |-- preprocessing    #预处理函数</div><div class="line">|  |-- utils            #实用工具函数</div><div class="line">|  |-- wrappers         #scikit-learn 封装类</div><div class="line">|  |-- activations.py</div><div class="line">|  |-- callbacks.py</div><div class="line">|  |-- constraints.py</div><div class="line">|  |-- initializations.py</div><div class="line">|  |-- metrics.py</div><div class="line">|  |-- models.py</div><div class="line">|  |-- objectives.py</div><div class="line">|  |-- optimizers.py</div><div class="line">|  |-- regularizers.py</div></pre></td></tr></table></figure>
-<p>实际上，对于在深度学习这个模块里面，我们主要关注的是engine文件夹中的内容，这里面包含了关于model、layer、node的实现方式，也就是最底层的内容。而我们在应用当中，主要使用的Keras文件夹下.py的文件，其中常用的Sequential模型在models.py中实现，各种Optimizer类在optimizers.py中实现，各种激活函数在activations.py等等。这些内容我们以后慢慢来看，我们先从底层开始看起，看看Keras的底层是如何实现可扩展结构的。</p>
-<h4 id="backend"><a href="#backend" class="headerlink" title="backend"></a>backend</h4><p>Keras可以在两中backend下运行，一个是TensorFlow，另一个是Theano。这是Keras最底层的计算模块。使用这两个模块也让其能够很好的利用GPU的计算资源。</p>
-<p>进入backend文件夹，下面有四个文件，__init__.py、common.py、tensorflow_backend.py和theano<em>backend.py。\</em>_init__.py用于引入backend时的初始化，所以决定具体使用的是哪个backend应该是由这里面的代码来决定的。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">_keras_base_dir = os.path.expanduser(&apos;~&apos;)</div><div class="line">if not os.access(_keras_base_dir, os.W_OK):</div><div class="line">    _keras_base_dir = &apos;/tmp&apos;</div><div class="line"></div><div class="line">_keras_dir = os.path.join(_keras_base_dir, &apos;.keras&apos;)</div><div class="line">if not os.path.exists(_keras_dir):</div><div class="line">    os.makedirs(_keras_dir)</div><div class="line"></div><div class="line">_BACKEND = &apos;theano&apos;</div><div class="line">_config_path = os.path.expanduser(os.path.join(_keras_dir, &apos;keras.json&apos;))</div></pre></td></tr></table></figure>
-<p>在这些代码中我们可以看到，需要获取用户目录下.keras中keras.json的文件夹，这个文件中包含了我们关于backend的相关配置。下面是我的电脑中keras.json文件的内容。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;floatx&quot;: &quot;float32&quot;,</div><div class="line">    &quot;backend&quot;: &quot;tensorflow&quot;,</div><div class="line">    &quot;epsilon&quot;: 1e-07,</div><div class="line">    &quot;image_dim_ordering&quot;: &quot;tf&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>如果这个文件存在话，Keras就会调用这个文件中的内容。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">if os.path.exists(_config_path):</div><div class="line">    _config = json.load(open(_config_path))</div><div class="line">    _floatx = _config.get(&apos;floatx&apos;, floatx())</div><div class="line">    assert _floatx in &#123;&apos;float16&apos;, &apos;float32&apos;, &apos;float64&apos;&#125;</div><div class="line">    _epsilon = _config.get(&apos;epsilon&apos;, epsilon())</div><div class="line">    assert type(_epsilon) == float</div><div class="line">    _backend = _config.get(&apos;backend&apos;, _BACKEND)</div><div class="line">    assert _backend in &#123;&apos;theano&apos;, &apos;tensorflow&apos;&#125;</div><div class="line">    _image_dim_ordering = _config.get(&apos;image_dim_ordering&apos;, image_dim_ordering())</div><div class="line">    assert _image_dim_ordering in &#123;&apos;tf&apos;, &apos;th&apos;&#125;</div><div class="line"></div><div class="line">    set_floatx(_floatx)</div><div class="line">    set_epsilon(_epsilon)</div><div class="line">    _BACKEND = _backend</div></pre></td></tr></table></figure>
-<p>Keras会读取keras.json中的配置信息，然后验证其合法性。然后进行相关的设置。注意：floatx()、epsilon()、set_floatx(_floatx)、set_epsilon(_epsilon)都是common.py文件中定义的函数。在common.py文件中定义了这几个参数的默认值。如果不存在keras.json文件时，或部分参数缺失时，Keras就会使用默认值进行设置，否则就通过keras.json中的参数来修改common.py定义的值。不过这里就有一个疑问了，为什么_BACKEND没有定义在common.py中而要在这里单独定义？略显奇怪，可能看之后的代码能得到解决吧。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">_config = &#123;&apos;floatx&apos;: floatx(),</div><div class="line">           &apos;epsilon&apos;: epsilon(),</div><div class="line">           &apos;backend&apos;: _BACKEND,</div><div class="line">           &apos;image_dim_ordering&apos;: image_dim_ordering()&#125;</div><div class="line">with open(_config_path, &apos;w&apos;) as f:</div><div class="line">    f.write(json.dumps(_config, indent=4))</div></pre></td></tr></table></figure>
-<p>在完成了对参数的检查之后，Keras将合法化后的参数在重新保存会配置文件之中。这种方式保证了在每次使用之后都能留有合法的配置，而且都能保留上一次的配置内容。不过我确实没有看出写回的必要性。如果参数缺省，上面的合法检验会保证使用默认参数，那么就算不写回，每次使用的也都是默认参数（即上一次的配置内容）。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">if &apos;KERAS_BACKEND&apos; in os.environ:</div><div class="line">    _backend = os.environ[&apos;KERAS_BACKEND&apos;]</div><div class="line">    assert _backend in &#123;&apos;theano&apos;, &apos;tensorflow&apos;&#125;</div><div class="line">    _BACKEND = _backend</div></pre></td></tr></table></figure>
-<p>接下来是看系统信息中是否包含backend相关参数，如果存在，则使用系统的参数。在这里我们可以看到，在backend的使用优先级：系统配置&gt;用户配置&gt;默认配置。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">if _BACKEND == &apos;theano&apos;:</div><div class="line">    sys.stderr.write(&apos;Using Theano backend.\n&apos;)</div><div class="line">    from .theano_backend import *</div><div class="line">elif _BACKEND == &apos;tensorflow&apos;:</div><div class="line">    sys.stderr.write(&apos;Using TensorFlow backend.\n&apos;)</div><div class="line">    from .tensorflow_backend import *</div><div class="line">else:</div><div class="line">    raise Exception(&apos;Unknown backend: &apos; + str(_BACKEND))</div></pre></td></tr></table></figure>
-<p>最后是根据配置情况，导入最终的backend，并给出反馈。可以看出作者在最开始写这部分代码的时候特别的谨慎，存在大量的合法性检验。</p>
-<p>在tensorflow_backend.py和theano_backend.py文件中是包含了各种基本运算的两种不同实现方式，其提供的接口是一模一样的，有兴趣的是可以看一下。在common.py文件中包含的是关于默认参数的设置，值得一提的是下面这个函数。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">def get_uid(prefix=&apos;&apos;):</div><div class="line">    if prefix not in _UID_PREFIXES:</div><div class="line">        _UID_PREFIXES[prefix] = 1</div><div class="line">        return 1</div><div class="line">    else:</div><div class="line">        _UID_PREFIXES[prefix] += 1</div><div class="line">        return _UID_PREFIXES[prefix]</div></pre></td></tr></table></figure>
-<p>这个函数在后面各种各样的类中定义name变量时都被调用了。这个函数是用来保证在其后定义其他类的时候，使用默认name变量时不出现重名的情况。因为Keras在后面搜索layer对象等其他对象时，都是依据name变量的值来保证唯一性。而所以在这里定义了一个函数，其后的类在定义的时候如果没有设置name变量，这会使用’class_name’ + get_uid(‘class_name’)的方式来定义name。</p>
-<h4 id="layer"><a href="#layer" class="headerlink" title="layer"></a>layer</h4><p>layer类是Keras最为重要的一个类，因为这个类构成了整个Keras的核心骨架。这个类在engine文件夹下的topology.py中定义。看这个文件之前，我们先看看engine文件夹下的__init__.py文件。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"># note: topology.Node is an internal class,</div><div class="line"># it isn&apos;t meant to be used by Keras users.</div><div class="line">from .topology import InputSpec</div><div class="line">from .topology import Input</div><div class="line">from .topology import InputLayer</div><div class="line">from .topology import Layer</div><div class="line">from .topology import Merge</div><div class="line">from .topology import merge</div><div class="line">from .topology import get_source_inputs</div><div class="line">from .training import Model</div></pre></td></tr></table></figure>
-<p>之所以看这个文件的主要原因是，这个文件是在engine在被import时会被引入的函数。这决定了在topology.py和training.py两个文件中，哪些函数是被外部所使用，哪些函数是内部的支持函数。我们将这个列表保留在这，方便之后查看。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h4&gt;&lt;p&gt;刚开始接触机器学习的时候，曾经试过用python写过一个简单的MLP（Multi-Layer Perceptron），其中仅
-    
-    </summary>
-    
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="keras" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/keras/"/>
     
     
       <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
@@ -178,51 +134,6 @@
     
     
       <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python源码解析(0)-准备工作</title>
-    <link href="http://yoursite.com/2017/02/05/%E6%8A%80%E6%9C%AF/Python/python_source_code_analysis_0_preparation/"/>
-    <id>http://yoursite.com/2017/02/05/技术/Python/python_source_code_analysis_0_preparation/</id>
-    <published>2017-02-04T16:24:58.000Z</published>
-    <updated>2017-02-26T09:39:35.902Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h4><p>原想着这个寒假主要的学习任务就是阅读python源码，但是碍于一直在写论文，现在才开始着手学习。其实想看python源码的目的很简单，一来对python很感兴趣，想了解它的工作原理。二来以后可能也想从事这方面的工作，所以希望能加深对python的理解。关于阅读源码的总结也会记录下来，跟大家一块分享。这里主要分析的python源码是3.6.0版本的，如果在分析中出现了由于版本不同所带来的问题，欢迎大家一块讨论。<br>阅读源码一定要有目的性，特别是这种大型的编译系统。所以在这里列下一个阅读目标列表及记录完成时间，这个列表也会随着我阅读的情况不断更新。最后的文章也会根据这个的顺序来排布。</p>
-<ol>
-<li>数据类型<br>1.1 基本类 object<br>1.2 整型类<br>1.3 字符串类<br>1.4 list类<br>1.5 tuple类<br>1.6 dict类</li>
-<li>内建函数<br>…</li>
-</ol>
-<a id="more"></a>
-<h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><h5 id="编译环境"><a href="#编译环境" class="headerlink" title="编译环境"></a>编译环境</h5><p>首先需要准备python的源码，可以在<a href="http://www.python.org/" target="_blank" rel="external">python官方网站</a>下载。其次是需要一个编译器，<a href="https://docs.python.org/devguide/index.html" target="_blank" rel="external">开发者文档</a>中有详细说明如何编译python，我这里主要使用的是Windows系统，所以选用<a href="https://www.visualstudio.com/" target="_blank" rel="external">Visual Studio 2015</a> 作为编译环境。<br>CPython中使用<a href="http://hg-scm.org/" target="_blank" rel="external">Mercurial</a>作为版本控制工具，并且在编译的过程中也使用了Mercurial相关的命令，所以这里需要提前安装好Mercurial。在Unix系统下可以直接用apt-get来安装。在Windows系统下，使用<a href="http://tortoisehg.org/" target="_blank" rel="external">TortoiseHg</a>会跟好一点，这个里面集成了Mercurial。注意在安装完TortoiseHg之后查看一下系统环境变量Path中是否包含了TortoiseHg路径</p>
-<p>安装完Mercurial之后，可以查看一下hg指令是否可以用，如果可以用的话就可以进行下一步了。</p>
-<p>Windows下的源码编译文件都在PCbuild文件夹下，进入这个文件夹之后，查看readme.txt文件，我们可以根据这个文件的指导来编译。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Quick Start Guide</div><div class="line">-----------------</div><div class="line">1.  Install Microsoft Visual Studio 2015, any edition.</div><div class="line">2.  Install Subversion, and make sure &apos;svn.exe&apos; is on your PATH.</div><div class="line">3.  Run &quot;build.bat -e&quot; to build Python in 32-bit Release configuration.</div><div class="line">4.  (Optional, but recommended) Run the test suite with &quot;rt.bat -q&quot;.</div></pre></td></tr></table></figure>
-<p>根据上面的步骤，我们还需要安装Subversion以确保svn指令能正确执行。我们去<a href="http://subversion.apache.org/" target="_blank" rel="external">Subversion</a>下载一个即可。在下载页面中对应的Windows版本下有很多镜像网站，选一个下载速度快一点的就可以了。不想那么麻烦的话可以直接在这里下载(<a href="https://www.visualsvn.com/files/Apache-Subversion-1.9.5.zip" target="_blank" rel="external">Apache Subversion command line tools</a>)。下载下来后解压缩出来，然后把其中bin文件的路径添加到系统环境变量Path中，然后进入cmd测试一下svn指令是否可以使用，如果可以的话我们就可以开始编译了。</p>
-<h5 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h5><p>在PCbuild目录下执行”build.bat -e”,即可开始编译，编译过程大概需要15分钟左右。编译结束之后应该会在当前文件夹下面生成两个文件夹obj和win32。我们进入win32可以看到里面有一个python.exe文件，这个就是我们编译出来的python编译程序。我们可以执行以下这个文件，查看一下是否完整。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Python 3.6.0 (default, Feb  5 2017, 00:57:29) [MSC v.1900 32 bit (Intel)] on win</div><div class="line">32</div><div class="line">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure>
-<p>上面那个时间是这个程序的编译时间。</p>
-<p>回到PCbuild文件夹，执行一下”rt.bat -q”测试是否成功。这个测试会消耗一定的时间，它会运行405个测试文件。<br>下面是测试完成之后显示的结果。具体这些测试错误的原因还没有找到，但是目前还不妨碍使用。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">359 tests OK.</div><div class="line"></div><div class="line">2 tests failed:</div><div class="line">    test_strptime test_time</div><div class="line"></div><div class="line">1 test altered the execution environment:</div><div class="line">    test_site</div><div class="line"></div><div class="line">43 tests skipped:</div><div class="line">    test_crypt test_curses test_dbm_gnu test_dbm_ndbm test_devpoll</div><div class="line">    test_epoll test_fcntl test_fork1 test_gdb test_grp test_idle</div><div class="line">    test_ioctl test_kqueue test_nis test_openpty test_ossaudiodev</div><div class="line">    test_pipes test_poll test_posix test_pty test_pwd test_readline</div><div class="line">    test_resource test_smtpnet test_socketserver test_spwd test_ssl</div><div class="line">    test_syslog test_tcl test_threadsignals test_timeout test_tix</div><div class="line">    test_tk test_ttk_guionly test_ttk_textonly test_turtle</div><div class="line">    test_urllib2net test_urllibnet test_wait3 test_wait4 test_winsound</div><div class="line">    test_xmlrpc_net test_zipfile64</div><div class="line"></div><div class="line">Total duration: 16 min 54 sec</div><div class="line">Tests result: FAILURE</div><div class="line">Windows fatal exception: code 1073807366</div><div class="line">Windows fatal exception: code 1073807366</div><div class="line">Windows fatal exception: code 1073807366</div><div class="line">Windows fatal exception: code 1073807366</div><div class="line">Windows fatal exception: code 1073807366</div><div class="line">Windows fatal exception: code 1073807366</div></pre></td></tr></table></figure>
-<p>测试完成之后，我们的准备工作也就完成了，之后在阅读源码的时候会经常修改源码，然后编译来查看效果。    </p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h4&gt;&lt;p&gt;原想着这个寒假主要的学习任务就是阅读python源码，但是碍于一直在写论文，现在才开始着手学习。其实想看python源码的目的很简单，一来对python很感兴趣，想了解它的工作原理。二来以后可能也想从事这方面的工作，所以希望能加深对python的理解。关于阅读源码的总结也会记录下来，跟大家一块分享。这里主要分析的python源码是3.6.0版本的，如果在分析中出现了由于版本不同所带来的问题，欢迎大家一块讨论。&lt;br&gt;阅读源码一定要有目的性，特别是这种大型的编译系统。所以在这里列下一个阅读目标列表及记录完成时间，这个列表也会随着我阅读的情况不断更新。最后的文章也会根据这个的顺序来排布。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;数据类型&lt;br&gt;1.1 基本类 object&lt;br&gt;1.2 整型类&lt;br&gt;1.3 字符串类&lt;br&gt;1.4 list类&lt;br&gt;1.5 tuple类&lt;br&gt;1.6 dict类&lt;/li&gt;
-&lt;li&gt;内建函数&lt;br&gt;…&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="python" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/python/"/>
-    
-    
-      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
