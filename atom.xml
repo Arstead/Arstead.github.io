@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-16T10:58:46.037Z</updated>
+  <updated>2017-02-26T09:37:44.569Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,13 +16,107 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>《异类-不一样的成功启示录》 马尔科姆 格拉德威尔 著</title>
+    <title>用Sublime Text 3打造一个完美的python工作环境</title>
+    <link href="http://yoursite.com/2017/02/26/%E6%8A%80%E6%9C%AF/Python/build_python_environment_with_sublime_text/"/>
+    <id>http://yoursite.com/2017/02/26/技术/Python/build_python_environment_with_sublime_text/</id>
+    <published>2017-02-26T06:00:58.000Z</published>
+    <updated>2017-02-26T09:37:44.569Z</updated>
+    
+    <content type="html"><![CDATA[<p>自从学习了Python之后，一直想找一个好的Python IDE环境，但是一直没有找到心仪的。我认为，程序员一定要对自己好一点，每天面对的编程界面一定要赏心悦目，不然如何面对一天的工作。Pycharm的工作界面略显难看，换了各种主题都没有找到合适的，而且Pycharm实在有点大，很多功能用不上，却让运行变得很卡。也曾经使用过一段时间VS (visual studio 2015)，对于曾经的C++程序员而言，VS的用户界面还是让我觉得很舒心的，但是VS新接入python时间不长，出现的很多问题很难找到合适的解决方案。还用过Eclipse+pydev的方式，但是我在学习Java的时候就觉得Eclipse的界面真的不是一般的难看。最后我放弃了所有的IDE，用Sublime Text 3来编写python程序，然后直接内嵌一个编译器来实现查看编译结果。但是每次调试的方法都是用print各种变量的方式来看，效率低下。终于，我找到了一个合适的插件，能方便的调用PDB调试程序，现在写Python整个人都是开心的。</p>
+<h3 id="Sublime-Text-3"><a href="#Sublime-Text-3" class="headerlink" title="Sublime Text 3"></a>Sublime Text 3</h3><p><a href="https://www.sublimetext.com/3" target="_blank" rel="external">ST3 (Sublime Text 3)</a> 是一个跨平台的文本编辑器，以其丰富的快捷键和灵活的插件著称，使用起来相当的方便。而且我认为，ST3是我见过最漂亮的文本编辑器。这个编译器自带了很多的编程语言的高亮显示，C/C++，Python，Java，Matlab等等。在这个界面的吸引下，我决定转投ST3的旗下。</p>
+<img src="/2017/02/26/技术/Python/build_python_environment_with_sublime_text/main_UI.png" alt="main_UI.png" title="">
+<p>可以看到，中间是主要的编程界面，左边是工作目录，右边上面是PDB的调试界面，右边下面是Python的交互式界面。将编程界面用来专心写程序，程序的编写过程中如果遇到什么语言方面或者库内容方面的问题，可以在右下角的交互式界面中进行查看。代码编写完之后，可以在右上角用PDB进行调试，而且在调试的时候也可以很方便的查看代码。并且可以根据工作目录来查看工程下其他的源码。在ST3中，其可以通过右键跳转到函数的定义之中，可以方便的查看函数内容。并在结合ST3中自带的各种快捷键，编码效率相当高。有兴趣的同学可以看看这份<a href="https://docs.sublimetext.info/en/latest/index.html" target="_blank" rel="external">非官方教程</a>，和它的<a href="http://sublime-text.readthedocs.io/en/latest/getting_started/install.html" target="_blank" rel="external">中文版非官方教程</a></p>
+<p>具体的安装方法在教程里面都有，可以在里面看，安装这个不是我要讲的主要内容，所以在这就不提了。遇到问题的话可以谷歌一下，基本上没有什么问题。</p>
+<h3 id="SublimeREPL"><a href="#SublimeREPL" class="headerlink" title="SublimeREPL"></a>SublimeREPL</h3><p><a href="https://sublimerepl.readthedocs.io/en/latest/" target="_blank" rel="external">SublimeREPL</a>是ST中的一个插件，它可以让我们在ST中运行解释器（REPL），而且对Python还有特别的支持，能运行选中的代码并且启动PDB调试。</p>
+<p>我们可以使用Package Control来安装这个，在ST3中使用快捷键Ctrl+Shift+P，调出Package Control界面，不想用快捷键的可以在Preferences-&gt;Package Control中调出。在输入框输入Install Package。</p>
+<img src="/2017/02/26/技术/Python/build_python_environment_with_sublime_text/pcip.png" alt="pcip.png" title="">
+<p>回车之后需要等待一下，ST3需要点时间来检索安装库。完成了之后会出来一个插件检索框。在里面输入SublimeREPL，然后回车安装即可。但是有时候会出现找不到这个库的情况。这个时候可以去<a href="https://github.com/wuub/SublimeREPL" target="_blank" rel="external">SublimeREPL的github</a>上面下载源码，然后解压到ST3的包目录(./User/AppData/Roaming/Sublime Text 3/Package)中。</p>
+<p>安装好了之后，可以在ST3中Tools-&gt;SublimeREPL-&gt;Python看到一些Python的启动选项，可以点开其中的Python，这个会调用系统中的Python解释器，并在ST3中呈现。也可以写一两个Python程序试一下其他的功能，里面有RUN current file，PDB current file等等。这样我们就可以在ST3中编写Python，并且可以直接调试。</p>
+<p>但是，每次都要点击这么多按钮，确实比较麻烦，我们来设置几个快捷键，让整个操作便捷一点。进入快捷键绑定界面，Preferences-&gt;Key Bindings调出ST3的快捷键绑定界面。在User那个文件中加入下面这些代码。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">    &#123; &quot;keys&quot;: [&quot;f1&quot;], &quot;caption&quot;: &quot;SublimeREPL: Python - RUN current file&quot;, &quot;command&quot;: &quot;run_existing_window_command&quot;, &quot;args&quot;: &#123;&quot;id&quot;: &quot;repl_python_run&quot;, &quot;file&quot;: &quot;config/Python/Main.sublime-menu&quot;&#125;&#125;, </div><div class="line">    &#123; &quot;keys&quot;: [&quot;f2&quot;], &quot;caption&quot;: &quot;SublimeREPL: Python - PDB current file&quot;, &quot;command&quot;: &quot;run_existing_window_command&quot;, &quot;args&quot;: &#123;&quot;id&quot;: &quot;repl_python_pdb&quot;, &quot;file&quot;: &quot;config/Python/Main.sublime-menu&quot;&#125;&#125;,</div><div class="line">    &#123; &quot;keys&quot;: [&quot;f3&quot;], &quot;caption&quot;: &quot;SublimeREPL: Python - Python&quot;, &quot;command&quot;: &quot;run_existing_window_command&quot;, &quot;args&quot;: &#123;&quot;id&quot;: &quot;repl_python&quot;, &quot;file&quot;: &quot;config/Python/Main.sublime-menu&quot;&#125;&#125;</div><div class="line">]</div></pre></td></tr></table></figure>
+<p>这个可以根据自己的喜好来添加，我设置的是F1是运行当前文件，F2是用PDB调试程序，F3是调出交互式Python编译器。这样，基本的环境就搭建完了。</p>
+<h3 id="SublimeLinter-pep8"><a href="#SublimeLinter-pep8" class="headerlink" title="SublimeLinter-pep8"></a>SublimeLinter-pep8</h3><p><a href="https://github.com/SublimeLinter/SublimeLinter-pep8" target="_blank" rel="external">SublimeLinter-pep8</a>是一个python代码样式的检测工具，可以用于修正python代码的书写方法，能让自己的代码看上去更加清爽一点。</p>
+<p>同样，这个插件可以使用Package Control来进行安装，在Install Package中输入SublimeLinter-pep8，然后安装即可。安装完后，选取需要修改样式的代码，点击鼠标右键，可以看到有一个AutoPEP8选项，然后点击Format即可。这款插件还有显示样式错误，设置快捷键等等功能，但是由于我有自己的代码风格，所以用这个比较少，只是在无法确定一些风格怎么处理的时候才会用到，所以也就懒得继续探索了。想要继续探索的同学可以谷歌一下。</p>
+<h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><p>正常的ST3界面只有单纯的输入界面和选项卡。调试或者运行会出现新的选项卡，相互之间切换也是一件很麻烦的事情，所以需要改变一下布局。</p>
+<p>在ST3的View-&gt;Layout中有很多布局形式，最开始的时候，我使用的是Grid的四格布局。但是我觉得显示的效果并不是很好，每个输入框太小，代码都看不全。</p>
+<img src="/2017/02/26/技术/Python/build_python_environment_with_sublime_text/grid_layout.png" alt="grid_layout.png" title="">
+<p>其他的布局格式看上去也不是很适用，所以想在网上找一个好的布局方式。但是ST3对布局方式好像不能定制化。但是在谷歌的过程中，我发现了一种T字型的三个布局，相当的不错。设置方式是这样的，先选择双列布局View-&gt;Layout-&gt;Columns:2，然后增加文件分组View-&gt;Groups-&gt;Move File to New Group，这样就可以多一个编辑框了。</p>
+<p>至于左边的工作目录，只要每次打开的时候都选择打开文件就可以了，File-&gt;Open Folder，然后选择你的工作目录就可以了。</p>
+<p>终于搭建好了一个舒心的Python工作环境，以后可以开开心心写Python了。</p>
+<blockquote class="blockquote-center">Kevin.记</blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;自从学习了Python之后，一直想找一个好的Python IDE环境，但是一直没有找到心仪的。我认为，程序员一定要对自己好一点，每天面对的编程界面一定要赏心悦目，不然如何面对一天的工作。Pycharm的工作界面略显难看，换了各种主题都没有找到合适的，而且Pycharm实在有
+    
+    </summary>
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="python" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/python/"/>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Keras源码解析(1)-底层结构</title>
+    <link href="http://yoursite.com/2017/02/18/%E6%8A%80%E6%9C%AF/Keras/keras_source_code_analysis_1_Infrastructures/"/>
+    <id>http://yoursite.com/2017/02/18/技术/Keras/keras_source_code_analysis_1_Infrastructures/</id>
+    <published>2017-02-18T11:54:58.000Z</published>
+    <updated>2017-02-26T09:39:51.313Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h4><p>刚开始接触机器学习的时候，曾经试过用python写过一个简单的MLP（Multi-Layer Perceptron），其中仅仅只是实现了简单的Gradient descent算法，激活函数上也只涉及了Sigmod激活函数。在这之后的很多研究中，都是用的现成的算法库在跑，完全接触不到实现方法，编程能力也急剧下降。所以趁着现在有点时间，认真学习一下别人是怎么样实现深度学习方法的。由于我一直使用的是python语言，而且我在入门深度学习的时候也是从Keras这个库开始的。自从被TensorFlow列为官网API之后，Keras使用的人也极具上升。所以决定从Keras源码开始看起，学习一下别人是如何实现深度学习框架的。</p>
+<p>由于我是即兴记录的，目前还没有任何的目标。所以可能会出现结构上有些凌乱，等我都掌握了之后，我再做整理吧。</p>
+<h4 id="文档结构"><a href="#文档结构" class="headerlink" title="文档结构"></a>文档结构</h4><p>我们先来看看Keras下的文档结构。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">|-- docs                #说明文档</div><div class="line">|-- examples            #应用示例</div><div class="line">|-- test                #测试文件</div><div class="line">|-- keras               #源码核心</div><div class="line">|  |-- backend          #底层backend</div><div class="line">|  |-- datasets         #数据获取源码</div><div class="line">|  |-- engine           #核心工具</div><div class="line">|  |-- layers           #层源码</div><div class="line">|  |-- legacy           #遗留源码</div><div class="line">|  |-- preprocessing    #预处理函数</div><div class="line">|  |-- utils            #实用工具函数</div><div class="line">|  |-- wrappers         #scikit-learn 封装类</div><div class="line">|  |-- activations.py</div><div class="line">|  |-- callbacks.py</div><div class="line">|  |-- constraints.py</div><div class="line">|  |-- initializations.py</div><div class="line">|  |-- metrics.py</div><div class="line">|  |-- models.py</div><div class="line">|  |-- objectives.py</div><div class="line">|  |-- optimizers.py</div><div class="line">|  |-- regularizers.py</div></pre></td></tr></table></figure>
+<p>实际上，对于在深度学习这个模块里面，我们主要关注的是engine文件夹中的内容，这里面包含了关于model、layer、node的实现方式，也就是最底层的内容。而我们在应用当中，主要使用的Keras文件夹下.py的文件，其中常用的Sequential模型在models.py中实现，各种Optimizer类在optimizers.py中实现，各种激活函数在activations.py等等。这些内容我们以后慢慢来看，我们先从底层开始看起，看看Keras的底层是如何实现可扩展结构的。</p>
+<h4 id="backend"><a href="#backend" class="headerlink" title="backend"></a>backend</h4><p>Keras可以在两中backend下运行，一个是TensorFlow，另一个是Theano。这是Keras最底层的计算模块。使用这两个模块也让其能够很好的利用GPU的计算资源。</p>
+<p>进入backend文件夹，下面有四个文件，__init__.py、common.py、tensorflow_backend.py和theano<em>backend.py。\</em>_init__.py用于引入backend时的初始化，所以决定具体使用的是哪个backend应该是由这里面的代码来决定的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">_keras_base_dir = os.path.expanduser(&apos;~&apos;)</div><div class="line">if not os.access(_keras_base_dir, os.W_OK):</div><div class="line">    _keras_base_dir = &apos;/tmp&apos;</div><div class="line"></div><div class="line">_keras_dir = os.path.join(_keras_base_dir, &apos;.keras&apos;)</div><div class="line">if not os.path.exists(_keras_dir):</div><div class="line">    os.makedirs(_keras_dir)</div><div class="line"></div><div class="line">_BACKEND = &apos;theano&apos;</div><div class="line">_config_path = os.path.expanduser(os.path.join(_keras_dir, &apos;keras.json&apos;))</div></pre></td></tr></table></figure>
+<p>在这些代码中我们可以看到，需要获取用户目录下.keras中keras.json的文件夹，这个文件中包含了我们关于backend的相关配置。下面是我的电脑中keras.json文件的内容。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;floatx&quot;: &quot;float32&quot;,</div><div class="line">    &quot;backend&quot;: &quot;tensorflow&quot;,</div><div class="line">    &quot;epsilon&quot;: 1e-07,</div><div class="line">    &quot;image_dim_ordering&quot;: &quot;tf&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>如果这个文件存在话，Keras就会调用这个文件中的内容。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">if os.path.exists(_config_path):</div><div class="line">    _config = json.load(open(_config_path))</div><div class="line">    _floatx = _config.get(&apos;floatx&apos;, floatx())</div><div class="line">    assert _floatx in &#123;&apos;float16&apos;, &apos;float32&apos;, &apos;float64&apos;&#125;</div><div class="line">    _epsilon = _config.get(&apos;epsilon&apos;, epsilon())</div><div class="line">    assert type(_epsilon) == float</div><div class="line">    _backend = _config.get(&apos;backend&apos;, _BACKEND)</div><div class="line">    assert _backend in &#123;&apos;theano&apos;, &apos;tensorflow&apos;&#125;</div><div class="line">    _image_dim_ordering = _config.get(&apos;image_dim_ordering&apos;, image_dim_ordering())</div><div class="line">    assert _image_dim_ordering in &#123;&apos;tf&apos;, &apos;th&apos;&#125;</div><div class="line"></div><div class="line">    set_floatx(_floatx)</div><div class="line">    set_epsilon(_epsilon)</div><div class="line">    _BACKEND = _backend</div></pre></td></tr></table></figure>
+<p>Keras会读取keras.json中的配置信息，然后验证其合法性。然后进行相关的设置。注意：floatx()、epsilon()、set_floatx(_floatx)、set_epsilon(_epsilon)都是common.py文件中定义的函数。在common.py文件中定义了这几个参数的默认值。如果不存在keras.json文件时，或部分参数缺失时，Keras就会使用默认值进行设置，否则就通过keras.json中的参数来修改common.py定义的值。不过这里就有一个疑问了，为什么_BACKEND没有定义在common.py中而要在这里单独定义？略显奇怪，可能看之后的代码能得到解决吧。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">_config = &#123;&apos;floatx&apos;: floatx(),</div><div class="line">           &apos;epsilon&apos;: epsilon(),</div><div class="line">           &apos;backend&apos;: _BACKEND,</div><div class="line">           &apos;image_dim_ordering&apos;: image_dim_ordering()&#125;</div><div class="line">with open(_config_path, &apos;w&apos;) as f:</div><div class="line">    f.write(json.dumps(_config, indent=4))</div></pre></td></tr></table></figure>
+<p>在完成了对参数的检查之后，Keras将合法化后的参数在重新保存会配置文件之中。这种方式保证了在每次使用之后都能留有合法的配置，而且都能保留上一次的配置内容。不过我确实没有看出写回的必要性。如果参数缺省，上面的合法检验会保证使用默认参数，那么就算不写回，每次使用的也都是默认参数（即上一次的配置内容）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">if &apos;KERAS_BACKEND&apos; in os.environ:</div><div class="line">    _backend = os.environ[&apos;KERAS_BACKEND&apos;]</div><div class="line">    assert _backend in &#123;&apos;theano&apos;, &apos;tensorflow&apos;&#125;</div><div class="line">    _BACKEND = _backend</div></pre></td></tr></table></figure>
+<p>接下来是看系统信息中是否包含backend相关参数，如果存在，则使用系统的参数。在这里我们可以看到，在backend的使用优先级：系统配置&gt;用户配置&gt;默认配置。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">if _BACKEND == &apos;theano&apos;:</div><div class="line">    sys.stderr.write(&apos;Using Theano backend.\n&apos;)</div><div class="line">    from .theano_backend import *</div><div class="line">elif _BACKEND == &apos;tensorflow&apos;:</div><div class="line">    sys.stderr.write(&apos;Using TensorFlow backend.\n&apos;)</div><div class="line">    from .tensorflow_backend import *</div><div class="line">else:</div><div class="line">    raise Exception(&apos;Unknown backend: &apos; + str(_BACKEND))</div></pre></td></tr></table></figure>
+<p>最后是根据配置情况，导入最终的backend，并给出反馈。可以看出作者在最开始写这部分代码的时候特别的谨慎，存在大量的合法性检验。</p>
+<p>在tensorflow_backend.py和theano_backend.py文件中是包含了各种基本运算的两种不同实现方式，其提供的接口是一模一样的，有兴趣的是可以看一下。在common.py文件中包含的是关于默认参数的设置，值得一提的是下面这个函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">def get_uid(prefix=&apos;&apos;):</div><div class="line">    if prefix not in _UID_PREFIXES:</div><div class="line">        _UID_PREFIXES[prefix] = 1</div><div class="line">        return 1</div><div class="line">    else:</div><div class="line">        _UID_PREFIXES[prefix] += 1</div><div class="line">        return _UID_PREFIXES[prefix]</div></pre></td></tr></table></figure>
+<p>这个函数在后面各种各样的类中定义name变量时都被调用了。这个函数是用来保证在其后定义其他类的时候，使用默认name变量时不出现重名的情况。因为Keras在后面搜索layer对象等其他对象时，都是依据name变量的值来保证唯一性。而所以在这里定义了一个函数，其后的类在定义的时候如果没有设置name变量，这会使用’class_name’ + get_uid(‘class_name’)的方式来定义name。</p>
+<h4 id="layer"><a href="#layer" class="headerlink" title="layer"></a>layer</h4><p>layer类是Keras最为重要的一个类，因为这个类构成了整个Keras的核心骨架。这个类在engine文件夹下的topology.py中定义。看这个文件之前，我们先看看engine文件夹下的__init__.py文件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"># note: topology.Node is an internal class,</div><div class="line"># it isn&apos;t meant to be used by Keras users.</div><div class="line">from .topology import InputSpec</div><div class="line">from .topology import Input</div><div class="line">from .topology import InputLayer</div><div class="line">from .topology import Layer</div><div class="line">from .topology import Merge</div><div class="line">from .topology import merge</div><div class="line">from .topology import get_source_inputs</div><div class="line">from .training import Model</div></pre></td></tr></table></figure>
+<p>之所以看这个文件的主要原因是，这个文件是在engine在被import时会被引入的函数。这决定了在topology.py和training.py两个文件中，哪些函数是被外部所使用，哪些函数是内部的支持函数。我们将这个列表保留在这，方便之后查看。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h4&gt;&lt;p&gt;刚开始接触机器学习的时候，曾经试过用python写过一个简单的MLP（Multi-Layer Perceptron），其中仅
+    
+    </summary>
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="keras" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/keras/"/>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《异类-不一样的成功启示录》 马尔科姆·格拉德威尔 著</title>
     <link href="http://yoursite.com/2017/02/13/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Outliers_The_Story_of_Success/"/>
     <id>http://yoursite.com/2017/02/13/读书笔记/Outliers_The_Story_of_Success/</id>
     <published>2017-02-13T15:18:55.000Z</published>
-    <updated>2017-02-16T10:58:46.037Z</updated>
+    <updated>2017-02-16T12:15:43.077Z</updated>
     
-    <content type="html"><![CDATA[<p><small><em>总字数：6573字，阅读时间：12分钟</em></small></p>
+    <content type="html"><![CDATA[<p><small><em>总字数：6573字，阅读时间：约13分钟</em></small></p>
 <blockquote>
 <p>成功=机遇+努力+智力+环境</p>
 </blockquote>
@@ -67,7 +161,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;small&gt;&lt;em&gt;总字数：6573字，阅读时间：12分钟&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;small&gt;&lt;em&gt;总字数：6573字，阅读时间：约13分钟&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;成功=机遇+努力+智力+环境&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -92,7 +186,7 @@
     <link href="http://yoursite.com/2017/02/05/%E6%8A%80%E6%9C%AF/Python/python_source_code_analysis_0_preparation/"/>
     <id>http://yoursite.com/2017/02/05/技术/Python/python_source_code_analysis_0_preparation/</id>
     <published>2017-02-04T16:24:58.000Z</published>
-    <updated>2017-02-16T10:58:31.677Z</updated>
+    <updated>2017-02-26T09:39:35.902Z</updated>
     
     <content type="html"><![CDATA[<h4 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h4><p>原想着这个寒假主要的学习任务就是阅读python源码，但是碍于一直在写论文，现在才开始着手学习。其实想看python源码的目的很简单，一来对python很感兴趣，想了解它的工作原理。二来以后可能也想从事这方面的工作，所以希望能加深对python的理解。关于阅读源码的总结也会记录下来，跟大家一块分享。这里主要分析的python源码是3.6.0版本的，如果在分析中出现了由于版本不同所带来的问题，欢迎大家一块讨论。<br>阅读源码一定要有目的性，特别是这种大型的编译系统。所以在这里列下一个阅读目标列表及记录完成时间，这个列表也会随着我阅读的情况不断更新。最后的文章也会根据这个的顺序来排布。</p>
 <ol>
@@ -279,9 +373,10 @@
     <link href="http://yoursite.com/2017/01/27/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/(%E4%BA%8C)/"/>
     <id>http://yoursite.com/2017/01/27/小说/一个人的能力/(二)/</id>
     <published>2017-01-27T11:06:55.000Z</published>
-    <updated>2017-02-16T10:58:11.974Z</updated>
+    <updated>2017-02-16T12:16:00.745Z</updated>
     
-    <content type="html"><![CDATA[<p>上午最后一节课总是显得那么漫长，特别还是数学课的时候，大家一边将老师写在黑板上的公式抄到笔记本之中，一边偷瞄墙上挂的时钟。等着秒钟一步一步的向前走，走完一圈又回到原点，好像时间又回到了最初的原点一般，停滞不前。终于，下课铃声响起，而老师上课的内容也基本讲完，高中的老师总是喜欢来下课之后再多占用一点时间，而刘老师也是一样，“我把作业布置完咱们就下课，今天做完习题册圆锥曲线最后的双曲线部分，每一个人最好都去推导一下三种圆锥曲线的表达式是怎么来的，有助于你们对这部分内容的理解，下课”。靠门边的同学像是听到了一声哨响一般，直接提着包冲出了教室。而李情旭，依旧默默的坐在那，回顾着刚刚上课记得笔记。“你怎么知道这节课老师心情不好的呀？”胡梦边收拾书包，边跟他闲扯。“因为我有超能力。”李情旭没有回头，一本正经的说出这句话。“你再扯，我吃饭去啦，拜拜”胡梦认为他在开玩笑，就打算去吃饭了。“拜”李情旭看着胡梦的背影默默的离开。</p>
+    <content type="html"><![CDATA[<p><small><em>总字数：1493字，阅读时间：约3分钟</em></small></p>
+<p>上午最后一节课总是显得那么漫长，特别还是数学课的时候，大家一边将老师写在黑板上的公式抄到笔记本之中，一边偷瞄墙上挂的时钟。等着秒钟一步一步的向前走，走完一圈又回到原点，好像时间又回到了最初的原点一般，停滞不前。终于，下课铃声响起，而老师上课的内容也基本讲完，高中的老师总是喜欢来下课之后再多占用一点时间，而刘老师也是一样，“我把作业布置完咱们就下课，今天做完习题册圆锥曲线最后的双曲线部分，每一个人最好都去推导一下三种圆锥曲线的表达式是怎么来的，有助于你们对这部分内容的理解，下课”。靠门边的同学像是听到了一声哨响一般，直接提着包冲出了教室。而李情旭，依旧默默的坐在那，回顾着刚刚上课记得笔记。“你怎么知道这节课老师心情不好的呀？”胡梦边收拾书包，边跟他闲扯。“因为我有超能力。”李情旭没有回头，一本正经的说出这句话。“你再扯，我吃饭去啦，拜拜”胡梦认为他在开玩笑，就打算去吃饭了。“拜”李情旭看着胡梦的背影默默的离开。</p>
 <a id="more"></a>
 <p>李情旭从出生开始，眼中的世界就和别人的不太相同。他看到的每一个人，头上都有一个小光点，闪烁着不同的光芒。他父母也带他去医院查过，但是并没有查出什么问题来。想着这件事并不会影响正常生活，所以大家也都没有再深究。而好奇心驱使着李情旭想探明这个光点究竟是什么，而不同的色彩又代表着什么。他开始观察每一个人头上的光点，渐渐发现当人们面带笑容时，头上的光点往往散发出黄色的光芒，而当人们脸上带有愁容的时候，头上的光芒往往是蓝色的。此刻，他意识到，这些光芒代表的是每一个人的内心情绪。而刘老师进门的时候，她的小光点散发着让人警觉的红色，这表示愤怒。</p>
 <p>看了看墙上的时钟，距离放学已经过去半个小时了，这个时候他也该准备去吃饭了。他起身收拾东西，发现坐在后面的欧阳时还在那里看书，头顶上泛着深邃的蓝光。蓝色的光线在寂静的教室中显得格外的耀眼，空气中似乎都能感受出他的忧伤。李情旭看了看欧阳时，发现他目光呆滞，书中的文字并没有进入他的脑海。“欧阳时，你还不走呀？”李情旭决定跟他聊一下。“啊，等会就走。”欧阳时惊的一下抬起头，似乎才回过神来。“时间也不早了，一块去吃饭吧”，听到这句话，欧阳时才想起来看看时间，发现已经过了半个多小时了。“都这么晚啦，我不吃饭了”欧阳时把目光重新转向了书本。“大中午不吃饭下午哪有力气上课啊，现在也不算太晚，汤粉应该还有，走吧。”李情旭一把把他的书抽出来，放到自己桌上。欧阳时看到这种情况，感觉也不好再拒绝了，就只能勉强答应了他，“那走吧”。</p>
@@ -290,7 +385,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;上午最后一节课总是显得那么漫长，特别还是数学课的时候，大家一边将老师写在黑板上的公式抄到笔记本之中，一边偷瞄墙上挂的时钟。等着秒钟一步一步的向前走，走完一圈又回到原点，好像时间又回到了最初的原点一般，停滞不前。终于，下课铃声响起，而老师上课的内容也基本讲完，高中的老师总是喜欢来下课之后再多占用一点时间，而刘老师也是一样，“我把作业布置完咱们就下课，今天做完习题册圆锥曲线最后的双曲线部分，每一个人最好都去推导一下三种圆锥曲线的表达式是怎么来的，有助于你们对这部分内容的理解，下课”。靠门边的同学像是听到了一声哨响一般，直接提着包冲出了教室。而李情旭，依旧默默的坐在那，回顾着刚刚上课记得笔记。“你怎么知道这节课老师心情不好的呀？”胡梦边收拾书包，边跟他闲扯。“因为我有超能力。”李情旭没有回头，一本正经的说出这句话。“你再扯，我吃饭去啦，拜拜”胡梦认为他在开玩笑，就打算去吃饭了。“拜”李情旭看着胡梦的背影默默的离开。&lt;/p&gt;
+      &lt;p&gt;&lt;small&gt;&lt;em&gt;总字数：1493字，阅读时间：约3分钟&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;上午最后一节课总是显得那么漫长，特别还是数学课的时候，大家一边将老师写在黑板上的公式抄到笔记本之中，一边偷瞄墙上挂的时钟。等着秒钟一步一步的向前走，走完一圈又回到原点，好像时间又回到了最初的原点一般，停滞不前。终于，下课铃声响起，而老师上课的内容也基本讲完，高中的老师总是喜欢来下课之后再多占用一点时间，而刘老师也是一样，“我把作业布置完咱们就下课，今天做完习题册圆锥曲线最后的双曲线部分，每一个人最好都去推导一下三种圆锥曲线的表达式是怎么来的，有助于你们对这部分内容的理解，下课”。靠门边的同学像是听到了一声哨响一般，直接提着包冲出了教室。而李情旭，依旧默默的坐在那，回顾着刚刚上课记得笔记。“你怎么知道这节课老师心情不好的呀？”胡梦边收拾书包，边跟他闲扯。“因为我有超能力。”李情旭没有回头，一本正经的说出这句话。“你再扯，我吃饭去啦，拜拜”胡梦认为他在开玩笑，就打算去吃饭了。“拜”李情旭看着胡梦的背影默默的离开。&lt;/p&gt;
     
     </summary>
     
@@ -308,9 +404,10 @@
     <link href="http://yoursite.com/2017/01/27/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/(%E4%B8%80)/"/>
     <id>http://yoursite.com/2017/01/27/小说/一个人的能力/(一)/</id>
     <published>2017-01-27T10:51:55.000Z</published>
-    <updated>2017-02-16T10:58:03.429Z</updated>
+    <updated>2017-02-16T12:15:41.473Z</updated>
     
-    <content type="html"><![CDATA[<p>老师伴着上课的曲子进门，班长李情旭看了一眼老师，扭头对同桌胡梦说：“这节课别睡觉了，刘老师心情很不好”。老师走上讲台，把考试卷子放在讲台桌子上，把U盘插在电脑上，像往常一样， 准备把上课的课件拷到电脑上。《土耳其进行曲》还在耳边回荡，也不清楚这所学校为什么要用这个曲子作为上课的铃声。估计是它的节奏比较欢快，能让人产生一种愉悦的心情以面对接下来四十五分钟的枯燥。老师还在操作着电脑，课间喧闹的气氛还没有消散，大家都七嘴八舌的讨论着。胡梦抬了抬头，看了看老师，像往常一样，没有任何的变化。胡梦又把头低了下来，枕在自己的手上。嘟囔了一句:“别闹”。李情旭也没有再理睡梦中的同桌，把目光转向投影出来的电脑画面。</p>
+    <content type="html"><![CDATA[<p><small><em>总字数：1890字，阅读时间：约4分钟</em></small></p>
+<p>老师伴着上课的曲子进门，班长李情旭看了一眼老师，扭头对同桌胡梦说：“这节课别睡觉了，刘老师心情很不好”。老师走上讲台，把考试卷子放在讲台桌子上，把U盘插在电脑上，像往常一样， 准备把上课的课件拷到电脑上。《土耳其进行曲》还在耳边回荡，也不清楚这所学校为什么要用这个曲子作为上课的铃声。估计是它的节奏比较欢快，能让人产生一种愉悦的心情以面对接下来四十五分钟的枯燥。老师还在操作着电脑，课间喧闹的气氛还没有消散，大家都七嘴八舌的讨论着。胡梦抬了抬头，看了看老师，像往常一样，没有任何的变化。胡梦又把头低了下来，枕在自己的手上。嘟囔了一句:“别闹”。李情旭也没有再理睡梦中的同桌，把目光转向投影出来的电脑画面。</p>
 <a id="more"></a>
 <p>这个班级的座位与大多数中学相同，每两排座位靠拢成一个大排，一共四大排，每个大排中间留出够一个人正常通行的空隙。而投影的位置在靠近窗户的位置，大概在第三大排的前方偏左。他们俩的位置在第三排的第二行。李情旭坐在左边，胡梦在右边。刘老师则在胡梦旁边过道的正前方。</p>
 <p>这位老师姓刘，全名叫刘蕊，是一位年轻有为的女老师，不到三十岁就已经评上了国家特级教师，讲的是数学课，教学主张因材施教，在她的心中，每一个人都有其所能适应的教学方式，有些人给一些压力，才能将心思放在学习上，有一些人需要鼓励，才能进步，给压力反倒会让他们手足无措。还有一些人自我约束能力强，自己能把控好自己，约束过多了反倒会产生叛逆心理。李情旭属于第一种人，而胡梦则是第二种。在胡梦眼中，刘老师是一个和蔼可亲的人，经常找自己谈心，所以她的课 是胡梦最放松的课。</p>
@@ -324,7 +421,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;老师伴着上课的曲子进门，班长李情旭看了一眼老师，扭头对同桌胡梦说：“这节课别睡觉了，刘老师心情很不好”。老师走上讲台，把考试卷子放在讲台桌子上，把U盘插在电脑上，像往常一样， 准备把上课的课件拷到电脑上。《土耳其进行曲》还在耳边回荡，也不清楚这所学校为什么要用这个曲子作为上课的铃声。估计是它的节奏比较欢快，能让人产生一种愉悦的心情以面对接下来四十五分钟的枯燥。老师还在操作着电脑，课间喧闹的气氛还没有消散，大家都七嘴八舌的讨论着。胡梦抬了抬头，看了看老师，像往常一样，没有任何的变化。胡梦又把头低了下来，枕在自己的手上。嘟囔了一句:“别闹”。李情旭也没有再理睡梦中的同桌，把目光转向投影出来的电脑画面。&lt;/p&gt;
+      &lt;p&gt;&lt;small&gt;&lt;em&gt;总字数：1890字，阅读时间：约4分钟&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;老师伴着上课的曲子进门，班长李情旭看了一眼老师，扭头对同桌胡梦说：“这节课别睡觉了，刘老师心情很不好”。老师走上讲台，把考试卷子放在讲台桌子上，把U盘插在电脑上，像往常一样， 准备把上课的课件拷到电脑上。《土耳其进行曲》还在耳边回荡，也不清楚这所学校为什么要用这个曲子作为上课的铃声。估计是它的节奏比较欢快，能让人产生一种愉悦的心情以面对接下来四十五分钟的枯燥。老师还在操作着电脑，课间喧闹的气氛还没有消散，大家都七嘴八舌的讨论着。胡梦抬了抬头，看了看老师，像往常一样，没有任何的变化。胡梦又把头低了下来，枕在自己的手上。嘟囔了一句:“别闹”。李情旭也没有再理睡梦中的同桌，把目光转向投影出来的电脑画面。&lt;/p&gt;
     
     </summary>
     
