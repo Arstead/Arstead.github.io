@@ -69,7 +69,7 @@
     <link href="http://yoursite.com/2017/02/26/%E6%8A%80%E6%9C%AF/Python/build_python_environment_with_sublime_text/"/>
     <id>http://yoursite.com/2017/02/26/技术/Python/build_python_environment_with_sublime_text/</id>
     <published>2017-02-26T06:00:58.000Z</published>
-    <updated>2017-02-26T09:43:53.656Z</updated>
+    <updated>2017-03-05T13:54:27.540Z</updated>
     
     <content type="html"><![CDATA[<p>自从学习了Python之后，一直想找一个好的Python IDE环境，但是一直没有找到心仪的。我认为，程序员一定要对自己好一点，每天面对的编程界面一定要赏心悦目，不然如何面对一天的工作。Pycharm的工作界面略显难看，换了各种主题都没有找到合适的，而且Pycharm实在有点大，很多功能用不上，却让运行变得很卡。也曾经使用过一段时间VS (visual studio 2015)，对于曾经的C++程序员而言，VS的用户界面还是让我觉得很舒心的，但是VS新接入python时间不长，出现的很多问题很难找到合适的解决方案。还用过Eclipse+pydev的方式，但是我在学习Java的时候就觉得Eclipse的界面真的不是一般的难看。最后我放弃了所有的IDE，用Sublime Text 3来编写python程序，然后直接内嵌一个编译器来实现查看编译结果。但是每次调试的方法都是用print各种变量的方式来看，效率低下。终于，我找到了一个合适的插件，能方便的调用PDB调试程序，现在写Python整个人都是开心的。</p>
 <h3 id="Sublime-Text-3"><a href="#Sublime-Text-3" class="headerlink" title="Sublime Text 3"></a>Sublime Text 3</h3><p><a href="https://www.sublimetext.com/3" target="_blank" rel="external">ST3 (Sublime Text 3)</a> 是一个跨平台的文本编辑器，以其丰富的快捷键和灵活的插件著称，使用起来相当的方便。而且我认为，ST3是我见过最漂亮的文本编辑器。这个编译器自带了很多的编程语言的高亮显示，C/C++，Python，Java，Matlab等等。在这个界面的吸引下，我决定转投ST3的旗下。</p>
@@ -93,7 +93,7 @@
 <p>其他的布局格式看上去也不是很适用，所以想在网上找一个好的布局方式。但是ST3对布局方式好像不能定制化。但是在谷歌的过程中，我发现了一种T字型的三个布局，相当的不错。设置方式是这样的，先选择双列布局View-&gt;Layout-&gt;Columns:2，然后增加文件分组View-&gt;Groups-&gt;Move File to New Group，这样就可以多一个编辑框了。</p>
 <p>至于左边的工作目录，只要每次打开的时候都选择打开文件就可以了，File-&gt;Open Folder，然后选择你的工作目录就可以了。</p>
 <p>终于搭建好了一个舒心的Python工作环境，以后可以开开心心写Python了。</p>
-<blockquote class="blockquote-center">Kevin.记</blockquote>]]></content>
+]]></content>
     
     <summary type="html">
     
@@ -119,7 +119,7 @@
     <link href="http://yoursite.com/2017/02/13/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Outliers_The_Story_of_Success/"/>
     <id>http://yoursite.com/2017/02/13/读书笔记/Outliers_The_Story_of_Success/</id>
     <published>2017-02-13T15:18:55.000Z</published>
-    <updated>2017-02-16T12:15:43.077Z</updated>
+    <updated>2017-03-05T13:53:26.342Z</updated>
     
     <content type="html"><![CDATA[<p><small><em>总字数：6573字，阅读时间：约13分钟</em></small></p>
 <blockquote>
@@ -162,7 +162,7 @@
 <p>在这样的传统文化影响之下，亚洲人能表现出更加勤奋的工作状态。在学校中，他们能会坚持更加长的学习时间，他们能比别人付出更多的努力。而这些辛勤的劳动也是亚洲人收益颇丰。事实上，在对比国际数学竞赛的比赛结果就能看的出来，亚洲人能表现出更优异的成绩，这不是因为他们的智商有多高，仅仅只是因为他们能坚持做更多的题。宾夕法尼亚大学的教育学者俄林·波发现，让参加TIMSS竞赛（国际数学和科学测评趋势）的青少年填写一份冗长的问卷，这份问卷仅包含父母教育程度，对朋友的描述等无意义的问题。而这份问卷的成绩由答题数量来决定。他惊奇的发现，问卷排名与数学竞赛的结果几乎完全一样。</p>
 <p>在传统文化的影响下，我们表现出不同的工作态度，生活态度。而这些态度，在后续指导这我们不断前行。但是，群体的影响下，个体的特性依旧可以得意保留。归根结底，<strong>影响成功最关键的因素在与努力程度</strong>。智力能达到正常即可。传统文化和机遇都只是让人们能更加容易实现达到专业所要求的努力程度。</p>
 <h4 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h4><p>格拉德威尔的这本书里面蕴含了大量的历史实例，深入分析了各种影响因素在成功中的作用。大量的故事描述使得阅读过程轻松愉悦。但是，故事描述过于分散，使得很难抓住书中的逻辑点，难以总结作者想要表述的观点。总体而言，是一本值得当床前读物阅读的书籍。</p>
-<blockquote class="blockquote-center">Kevin.记</blockquote>]]></content>
+]]></content>
     
     <summary type="html">
     
@@ -191,7 +191,7 @@
     <link href="http://yoursite.com/2017/01/29/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_algolia_into_hexo/"/>
     <id>http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/</id>
     <published>2017-01-29T12:02:55.000Z</published>
-    <updated>2017-02-16T12:11:02.019Z</updated>
+    <updated>2017-03-05T13:53:43.766Z</updated>
     
     <content type="html"><![CDATA[<p>在Hexo里面文章多了以后就会出现难以查找内容的问题，所以就需要一个站内搜索的功能。我大致看了一下NexT上支持的集中站内搜索引擎，<a href="https://swiftype.com/" target="_blank" rel="external">Swiftype</a>因为注册需要一个企业邮箱，而本人学生党并没有企业邮箱。<a href="http://tinysou.com/" target="_blank" rel="external">微搜索</a>好像主页崩了，一直登陆不上去。像百度，google这样的本地搜索UI设计实在是不堪入目。然后就选择了algolia。好在NexT 5.1以上的版本已经支持了algolia搜索，接入也比较的方便。</p>
 <p>这是一个法国初创公司做的，致力于在毫秒级时间内完成内容搜索，具体的细节可以上官方网站 <a href="https://www.algolia.com/" target="_blank" rel="external">algolia</a> 。搜索呈现像下面这样:</p>
@@ -236,10 +236,6 @@
 <p>查看加载情况的时候发现js调用异常，发现是因为index name里面包含了引号，导致algolia后端的js出现异常，所以页面加载出现问题。这个时候只需要修改一下index name就可以了。</p>
 <h4 id="搜索后无法正确跳转"><a href="#搜索后无法正确跳转" class="headerlink" title="搜索后无法正确跳转"></a>搜索后无法正确跳转</h4><p>搜索后出现无法正确跳转的原因是algolia没有获取path字段，所以最后的跳转地址没有正确填充，有可能会出现点击没有反应，也有可能像上文中提到的出现404异常，这个时候只需要按上文所说，在.\hexo\node_modules\hexo-algolia\lib\command.js文件里，添加path字段到storedPost变量中即可。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var storedPost = _.pick(data, [&apos;title&apos;, &apos;date&apos;, &apos;slug&apos;, &apos;path&apos;, &apos;content&apos;, &apos;excerpt&apos;, &apos;permalink&apos;]);</div></pre></td></tr></table></figure>
-<blockquote class="blockquote-center">Kevin.记</blockquote>
-
-
-
 ]]></content>
     
     <summary type="html">
@@ -264,15 +260,15 @@
     <link href="http://yoursite.com/2017/01/29/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/(%E4%B8%89)/"/>
     <id>http://yoursite.com/2017/01/29/小说/一个人的能力/(三)/</id>
     <published>2017-01-28T16:37:55.000Z</published>
-    <updated>2017-02-16T10:58:07.253Z</updated>
+    <updated>2017-03-05T13:54:48.591Z</updated>
     
     <content type="html"><![CDATA[<p>欧阳时家境不算好，</p>
-<blockquote class="blockquote-center">Kevin.记</blockquote>]]></content>
+]]></content>
     
     <summary type="html">
     
       &lt;p&gt;欧阳时家境不算好，&lt;/p&gt;
-&lt;blockquote class=&quot;blockquote-center&quot;&gt;Kevin.记&lt;/blockquote&gt;
+
     
     </summary>
     
@@ -290,7 +286,7 @@
     <link href="http://yoursite.com/2017/01/28/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_tags_page/"/>
     <id>http://yoursite.com/2017/01/28/技术/Hexo/How_to_add_tags_page/</id>
     <published>2017-01-28T10:02:55.000Z</published>
-    <updated>2017-02-16T10:57:53.184Z</updated>
+    <updated>2017-03-05T13:54:16.702Z</updated>
     
     <content type="html"><![CDATA[<h3 id="添加标签和分类"><a href="#添加标签和分类" class="headerlink" title="添加标签和分类"></a>添加标签和分类</h3><p>在Hexo中，有两种管理的方式，一种是使用分类的方式，这是一种有层次的分类方式，适用于大类别下套小类别的分类方式，例如：编程语言-python等。而还有一种是使用标签的方式，这种方式适用于同一级别的类别分类方式，例如：小说，论文等。<br>对应于具体的文章，可以在Front-matter中进行设定，例如：</p>
 <a id="more"></a>
@@ -311,7 +307,7 @@
 <p>分类页的情况一样，需要把type属性改成categories</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: categories</div><div class="line">date: 2017-01-28 02:15:09 #时间随意</div><div class="line">type: categories</div><div class="line">---</div></pre></td></tr></table></figure>
 <p>完成修改之后重新生成部署即可。</p>
-<blockquote class="blockquote-center">Kevin.记</blockquote>]]></content>
+]]></content>
     
     <summary type="html">
     
@@ -333,7 +329,7 @@
     <link href="http://yoursite.com/2017/01/27/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/(%E4%BA%8C)/"/>
     <id>http://yoursite.com/2017/01/27/小说/一个人的能力/(二)/</id>
     <published>2017-01-27T11:06:55.000Z</published>
-    <updated>2017-02-16T12:16:00.745Z</updated>
+    <updated>2017-03-05T13:54:45.739Z</updated>
     
     <content type="html"><![CDATA[<p><small><em>总字数：1493字，阅读时间：约3分钟</em></small></p>
 <p>上午最后一节课总是显得那么漫长，特别还是数学课的时候，大家一边将老师写在黑板上的公式抄到笔记本之中，一边偷瞄墙上挂的时钟。等着秒钟一步一步的向前走，走完一圈又回到原点，好像时间又回到了最初的原点一般，停滞不前。终于，下课铃声响起，而老师上课的内容也基本讲完，高中的老师总是喜欢来下课之后再多占用一点时间，而刘老师也是一样，“我把作业布置完咱们就下课，今天做完习题册圆锥曲线最后的双曲线部分，每一个人最好都去推导一下三种圆锥曲线的表达式是怎么来的，有助于你们对这部分内容的理解，下课”。靠门边的同学像是听到了一声哨响一般，直接提着包冲出了教室。而李情旭，依旧默默的坐在那，回顾着刚刚上课记得笔记。“你怎么知道这节课老师心情不好的呀？”胡梦边收拾书包，边跟他闲扯。“因为我有超能力。”李情旭没有回头，一本正经的说出这句话。“你再扯，我吃饭去啦，拜拜”胡梦认为他在开玩笑，就打算去吃饭了。“拜”李情旭看着胡梦的背影默默的离开。</p>
@@ -341,7 +337,7 @@
 <p>李情旭从出生开始，眼中的世界就和别人的不太相同。他看到的每一个人，头上都有一个小光点，闪烁着不同的光芒。他父母也带他去医院查过，但是并没有查出什么问题来。想着这件事并不会影响正常生活，所以大家也都没有再深究。而好奇心驱使着李情旭想探明这个光点究竟是什么，而不同的色彩又代表着什么。他开始观察每一个人头上的光点，渐渐发现当人们面带笑容时，头上的光点往往散发出黄色的光芒，而当人们脸上带有愁容的时候，头上的光芒往往是蓝色的。此刻，他意识到，这些光芒代表的是每一个人的内心情绪。而刘老师进门的时候，她的小光点散发着让人警觉的红色，这表示愤怒。</p>
 <p>看了看墙上的时钟，距离放学已经过去半个小时了，这个时候他也该准备去吃饭了。他起身收拾东西，发现坐在后面的欧阳时还在那里看书，头顶上泛着深邃的蓝光。蓝色的光线在寂静的教室中显得格外的耀眼，空气中似乎都能感受出他的忧伤。李情旭看了看欧阳时，发现他目光呆滞，书中的文字并没有进入他的脑海。“欧阳时，你还不走呀？”李情旭决定跟他聊一下。“啊，等会就走。”欧阳时惊的一下抬起头，似乎才回过神来。“时间也不早了，一块去吃饭吧”，听到这句话，欧阳时才想起来看看时间，发现已经过了半个多小时了。“都这么晚啦，我不吃饭了”欧阳时把目光重新转向了书本。“大中午不吃饭下午哪有力气上课啊，现在也不算太晚，汤粉应该还有，走吧。”李情旭一把把他的书抽出来，放到自己桌上。欧阳时看到这种情况，感觉也不好再拒绝了，就只能勉强答应了他，“那走吧”。</p>
 <p>午后的食堂已经不那么拥挤，他们各自买了一份汤粉，在食堂一个偏僻的角落坐下。这个位置是李情旭找的，他知道欧阳时现在心情很差，估计是什么不太容易说出口的事，所以找了一个偏僻的地方，这样才能更好的跟他谈心。“我看你刚刚魂不守舍的，有心事啊？”李情旭也比较直接，似乎并不打算拐弯抹角。“没有啊，应该是上课上的累了”欧阳时用筷子拨弄着自己碗里的面，似乎并不打算吃。“还没有心事，你的表情都写在脸上了，别憋着，说出来就好了，是不是看上哪个妹子不好意思说呀”李情旭看着他头上的蓝光，希望通过一句玩笑话转变一下气氛。“没，我也没资本看上别人呀”欧阳时看了看李情旭，似乎想说点什么，却又不知道该如何开口。“那你咋啦，没事，说出来就会好受了，而且我不跟别人说的”李情旭继续用语言来缓释他的心理防线，心中的事不愿意说无外乎就是怕别人知道，其实每个人都知道，倾诉是最好的释压的方式；只是，我们缺少一个能信任的倾听者。欧阳时看了看他眼中的班长，他第一次感受到有人如此关心自己。“我，家里出了点事。”</p>
-<blockquote class="blockquote-center">Kevin.记</blockquote>]]></content>
+]]></content>
     
     <summary type="html">
     
@@ -364,7 +360,7 @@
     <link href="http://yoursite.com/2017/01/27/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/(%E4%B8%80)/"/>
     <id>http://yoursite.com/2017/01/27/小说/一个人的能力/(一)/</id>
     <published>2017-01-27T10:51:55.000Z</published>
-    <updated>2017-02-16T12:15:41.473Z</updated>
+    <updated>2017-03-05T13:54:36.659Z</updated>
     
     <content type="html"><![CDATA[<p><small><em>总字数：1890字，阅读时间：约4分钟</em></small></p>
 <p>老师伴着上课的曲子进门，班长李情旭看了一眼老师，扭头对同桌胡梦说：“这节课别睡觉了，刘老师心情很不好”。老师走上讲台，把考试卷子放在讲台桌子上，把U盘插在电脑上，像往常一样， 准备把上课的课件拷到电脑上。《土耳其进行曲》还在耳边回荡，也不清楚这所学校为什么要用这个曲子作为上课的铃声。估计是它的节奏比较欢快，能让人产生一种愉悦的心情以面对接下来四十五分钟的枯燥。老师还在操作着电脑，课间喧闹的气氛还没有消散，大家都七嘴八舌的讨论着。胡梦抬了抬头，看了看老师，像往常一样，没有任何的变化。胡梦又把头低了下来，枕在自己的手上。嘟囔了一句:“别闹”。李情旭也没有再理睡梦中的同桌，把目光转向投影出来的电脑画面。</p>
@@ -377,7 +373,7 @@
 <p>刘老师等着同学们寻找自己的名字，她环顾四周，看着大家脸上的表情。这时发现胡梦趴在那，大吼了一声，”胡梦”，胡梦猛的抬起了头，眼神充满着惊恐。”别以为你自比分高就心安理得了，你现在成绩还是全班最后一名，你努力的还不够。” 其实，胡梦并不知道自己的自比分到底是多少，听到刘老师这么一说，才看向投影里的成绩表，原来自己的自比分相较于上一次考试高了一个档位，在全校的排名也前进了一百多名。虽然刚刚被老师说了一通，但是看到这个分数心里还是很高兴的。</p>
 <p>“好了，还想看成绩的同学下课再看，我们现在开始讲试卷，班长，把这些试卷发下去。”刘老师边说边把电脑上的表格文件关掉。李情旭走到老师旁边，拿走了一打试卷，分发给大家。</p>
 <p>回到桌位上，李情旭看了一眼胡梦，胡梦拿到自己的试卷，嘟囔了一句:”这样真的有效。”，”什么有效？”李情旭很不解的看着她。”没啥”。胡梦抬起头，看向老师。而李情旭微微一笑，也转头看向了老师。</p>
-<blockquote class="blockquote-center">Kevin.记</blockquote>]]></content>
+]]></content>
     
     <summary type="html">
     
