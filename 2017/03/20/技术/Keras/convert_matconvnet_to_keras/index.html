@@ -89,15 +89,15 @@
 <meta name="description" content="在最开始接触深度学习的时候，很经常使用MatConvNet。主要是因为里面的预训练模型比较丰富，在fine-tune的过程中能获得比较好的结果，很适合新手使用。但是随着对深度网络越来越深入之后，很多就需要自己去设计层结构，损失函数，规则项等等，这个时候MatConvNet就显得力不从心了。而keras的出现就大大简化了这一过程，良好的接口让构建模型简单快速，而且可扩展性强。对于需要深入底层的实现，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="将matconvnet预训练模型转成keras模型">
-<meta property="og:url" content="http://yoursite.com/2017/02/26/技术/Keras/convert_matconvnet_to_keras/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/03/20/技术/Keras/convert_matconvnet_to_keras/index.html">
 <meta property="og:site_name" content="Hi, Thinking">
 <meta property="og:description" content="在最开始接触深度学习的时候，很经常使用MatConvNet。主要是因为里面的预训练模型比较丰富，在fine-tune的过程中能获得比较好的结果，很适合新手使用。但是随着对深度网络越来越深入之后，很多就需要自己去设计层结构，损失函数，规则项等等，这个时候MatConvNet就显得力不从心了。而keras的出现就大大简化了这一过程，良好的接口让构建模型简单快速，而且可扩展性强。对于需要深入底层的实现，">
-<meta property="og:image" content="http://yoursite.com/2017/02/26/技术/Keras/convert_matconvnet_to_keras/border_mode.jpg">
-<meta property="og:updated_time" content="2017-03-20T13:47:39.525Z">
+<meta property="og:image" content="http://yoursite.com/2017/03/20/技术/Keras/convert_matconvnet_to_keras/border_mode.jpg">
+<meta property="og:updated_time" content="2017-03-20T13:50:45.421Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="将matconvnet预训练模型转成keras模型">
 <meta name="twitter:description" content="在最开始接触深度学习的时候，很经常使用MatConvNet。主要是因为里面的预训练模型比较丰富，在fine-tune的过程中能获得比较好的结果，很适合新手使用。但是随着对深度网络越来越深入之后，很多就需要自己去设计层结构，损失函数，规则项等等，这个时候MatConvNet就显得力不从心了。而keras的出现就大大简化了这一过程，良好的接口让构建模型简单快速，而且可扩展性强。对于需要深入底层的实现，">
-<meta name="twitter:image" content="http://yoursite.com/2017/02/26/技术/Keras/convert_matconvnet_to_keras/border_mode.jpg">
+<meta name="twitter:image" content="http://yoursite.com/2017/03/20/技术/Keras/convert_matconvnet_to_keras/border_mode.jpg">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/02/26/技术/Keras/convert_matconvnet_to_keras/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/20/技术/Keras/convert_matconvnet_to_keras/"/>
 
 
 
@@ -321,7 +321,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/26/技术/Keras/convert_matconvnet_to_keras/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/20/技术/Keras/convert_matconvnet_to_keras/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Kevin">
@@ -360,8 +360,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-26T14:00:58+08:00">
-                2017-02-26
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-20T21:00:58+08:00">
+                2017-03-20
               </time>
             
 
@@ -412,8 +412,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/02/26/技术/Keras/convert_matconvnet_to_keras/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/02/26/技术/Keras/convert_matconvnet_to_keras/" itemprop="commentCount"></span>
+                <a href="/2017/03/20/技术/Keras/convert_matconvnet_to_keras/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/20/技术/Keras/convert_matconvnet_to_keras/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -423,7 +423,7 @@
 
           
           
-             <span id="/2017/02/26/技术/Keras/convert_matconvnet_to_keras/" class="leancloud_visitors" data-flag-title="将matconvnet预训练模型转成keras模型">
+             <span id="/2017/03/20/技术/Keras/convert_matconvnet_to_keras/" class="leancloud_visitors" data-flag-title="将matconvnet预训练模型转成keras模型">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -473,7 +473,7 @@
 <p>但是，这里有一点需要格外注意，因为MatConvNet中没有单独定义全连接层，其直接使用卷积层作为替换，最后结果使用squeeze函数来压缩冗余的维度。而这两种层唯一的区别在于name属性中，卷积层为’conv’开头的字样，如’conv1_1’，而全连接层以’fc’开头的字样，如’fc8’。所以这个时候我们就以name属性作为判断依据来判定是否为全连接层。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">if layer_type == &apos;conv&apos;:</div><div class="line">            if layer_name.startswith(&apos;conv&apos;):</div><div class="line">                mat_weights = mat_layer.weights[0]</div><div class="line">                mat_bias = mat_layer.weights[1]</div><div class="line">                weights_shape = mat_weights.shape[:2]</div><div class="line">                nb_filter = mat_weights.shape[-1]</div><div class="line">                keras_weights = None if only_architecture else [mat_weights, mat_bias]</div><div class="line">                x = Convolution2D(nb_filter, weights_shape[0], weights_shape[1], </div><div class="line">                                border_mode=&apos;same&apos;, </div><div class="line">                                name=layer_name, </div><div class="line">                                weights=keras_weights)(x)</div></pre></td></tr></table></figure>
 <p>值得一提的是，在MatConvNet中，存在stride和padding属性来确定遍历情况。但是在Keras中却没有，Keras只提供了三种border_mode（’valid’：只在特征内遍历，不进行扩充。’same’：保持特征大小不变， ‘full’：遍历所有元素，卷积核超出特征边界的部分设置为0）。如下图所示(下图来源于深度学习Keras群@情笔M医学影像)。</p>
-<img src="/2017/02/26/技术/Keras/convert_matconvnet_to_keras/border_mode.jpg" alt="border_mode.jpg" title="">
+<img src="/2017/03/20/技术/Keras/convert_matconvnet_to_keras/border_mode.jpg" alt="border_mode.jpg" title="">
 <p>而VGGFACE模型中，所使用的卷积层均为stride=1，padding=1，即为Keras中的same模式，所以我们定义卷积层的时候直接用这个border_mode即可。</p>
 <p>回过头来，如果是全连接层，我们就需要做一个判定，看是否被flatten。这里是MatConvNet设计上的一个区别，因为没有flatten层，所以它只能采用类似于全卷积的方法，定义一个卷积核与特征维度相同的卷积层，使得最后出来的特征是单维的。而这一层实际上是一个全连接层，所以MatConvNet使用’fc’字样开头的名字来定义name属性，也就是说这一个包含卷积核的全连接层。而Keras中因为有Flatten层，所以不需要考虑这么多细节问题。但是在这里，我们就需要依照MatConvNet的结构，对第一个遇到的全连接层，再多定义一个卷积层，并且将border_mode设置为valid（相当于stride为1）。</p>
 <p>其次还有一个问题是权重维度，因为对于全连接层而言，权重维度为2，但是对于卷积层而言，则是4。所以对于其后的全连接层，它是按照input_node*output_node的结构来定义的，所以我们取权重的第二维大小作为全连接层的节点数即可。最后对未实现的结构抛出异常。</p>
@@ -515,7 +515,7 @@ print(mat_model[&apos;meta&apos;].classes.description[idx])
         </div>
         <div class="copyright">
         <p><span>
-        <b>本文地址：</b><a href="/2017/02/26/技术/Keras/convert_matconvnet_to_keras/" title="将matconvnet预训练模型转成keras模型">/2017/02/26/技术/Keras/convert_matconvnet_to_keras/</a>
+        <b>本文地址：</b><a href="/2017/03/20/技术/Keras/convert_matconvnet_to_keras/" title="将matconvnet预训练模型转成keras模型">/2017/03/20/技术/Keras/convert_matconvnet_to_keras/</a>
         <br/>
         <b>转载请注明出处   ---By Kevin</b>
         </span></p>
@@ -543,8 +543,8 @@ print(mat_model[&apos;meta&apos;].classes.description[idx])
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/13/读书笔记/Outliers_The_Story_of_Success/" rel="next" title="《异类-不一样的成功启示录》 马尔科姆·格拉德威尔 著">
-                <i class="fa fa-chevron-left"></i> 《异类-不一样的成功启示录》 马尔科姆·格拉德威尔 著
+              <a href="/2017/03/03/读书笔记/Cien años de soledad/" rel="next" title="《百年孤独》 加西亚·马尔克斯 著">
+                <i class="fa fa-chevron-left"></i> 《百年孤独》 加西亚·马尔克斯 著
               </a>
             
           </div>
@@ -552,10 +552,6 @@ print(mat_model[&apos;meta&apos;].classes.description[idx])
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/02/26/技术/Python/build_python_environment_with_sublime_text/" rel="prev" title="用Sublime Text 3打造一个完美的python工作环境">
-                用Sublime Text 3打造一个完美的python工作环境 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -829,7 +825,7 @@ print(mat_model[&apos;meta&apos;].classes.description[idx])
 
     <script type="text/javascript">
       var disqus_shortname = 'kevinw';
-      var disqus_identifier = '2017/02/26/技术/Keras/convert_matconvnet_to_keras/';
+      var disqus_identifier = '2017/03/20/技术/Keras/convert_matconvnet_to_keras/';
 
       var disqus_title = "将matconvnet预训练模型转成keras模型";
 
