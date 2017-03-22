@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://arstead.github.io/"/>
   <updated>2017-03-20T13:50:45.421Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://arstead.github.io/</id>
   
   <author>
     <name>Kevin</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>将matconvnet预训练模型转成keras模型</title>
-    <link href="http://yoursite.com/2017/03/20/%E6%8A%80%E6%9C%AF/Keras/convert_matconvnet_to_keras/"/>
-    <id>http://yoursite.com/2017/03/20/技术/Keras/convert_matconvnet_to_keras/</id>
+    <link href="https://arstead.github.io/2017/03/20/%E6%8A%80%E6%9C%AF/Keras/convert_matconvnet_to_keras/"/>
+    <id>https://arstead.github.io/2017/03/20/技术/Keras/convert_matconvnet_to_keras/</id>
     <published>2017-03-20T13:00:58.000Z</published>
     <updated>2017-03-20T13:50:45.421Z</updated>
     
@@ -79,19 +79,19 @@ print(mat_model[&apos;meta&apos;].classes.description[idx])
     
     </summary>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="Keras" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/Keras/"/>
+      <category term="Keras" scheme="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/Keras/"/>
     
     
-      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://arstead.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title>用Sublime Text 3打造一个完美的python工作环境</title>
-    <link href="http://yoursite.com/2017/02/26/%E6%8A%80%E6%9C%AF/Python/build_python_environment_with_sublime_text/"/>
-    <id>http://yoursite.com/2017/02/26/技术/Python/build_python_environment_with_sublime_text/</id>
+    <link href="https://arstead.github.io/2017/02/26/%E6%8A%80%E6%9C%AF/Python/build_python_environment_with_sublime_text/"/>
+    <id>https://arstead.github.io/2017/02/26/技术/Python/build_python_environment_with_sublime_text/</id>
     <published>2017-02-26T06:00:58.000Z</published>
     <updated>2017-03-05T13:54:27.540Z</updated>
     
@@ -129,19 +129,19 @@ print(mat_model[&apos;meta&apos;].classes.description[idx])
     
     </summary>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="python" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/python/"/>
+      <category term="python" scheme="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/python/"/>
     
     
-      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://arstead.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title>《异类-不一样的成功启示录》 马尔科姆·格拉德威尔 著</title>
-    <link href="http://yoursite.com/2017/02/13/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Outliers_The_Story_of_Success/"/>
-    <id>http://yoursite.com/2017/02/13/读书笔记/Outliers_The_Story_of_Success/</id>
+    <link href="https://arstead.github.io/2017/02/13/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Outliers_The_Story_of_Success/"/>
+    <id>https://arstead.github.io/2017/02/13/读书笔记/Outliers_The_Story_of_Success/</id>
     <published>2017-02-13T15:18:55.000Z</published>
     <updated>2017-03-05T13:53:26.342Z</updated>
     
@@ -203,17 +203,17 @@ print(mat_model[&apos;meta&apos;].classes.description[idx])
     
     </summary>
     
-      <category term="读书笔记" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="https://arstead.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="https://arstead.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>在Hexo+NexT中添加algolia search</title>
-    <link href="http://yoursite.com/2017/01/29/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_algolia_into_hexo/"/>
-    <id>http://yoursite.com/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/</id>
+    <link href="https://arstead.github.io/2017/01/29/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_algolia_into_hexo/"/>
+    <id>https://arstead.github.io/2017/01/29/技术/Hexo/How_to_add_algolia_into_hexo/</id>
     <published>2017-01-29T12:02:55.000Z</published>
     <updated>2017-03-05T13:53:43.766Z</updated>
     
@@ -270,19 +270,19 @@ print(mat_model[&apos;meta&apos;].classes.description[idx])
     
     </summary>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="Hexo" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
+      <category term="Hexo" scheme="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
     
     
-      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://arstead.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title>在Hexo+NexT中添加标签和分类</title>
-    <link href="http://yoursite.com/2017/01/28/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_tags_page/"/>
-    <id>http://yoursite.com/2017/01/28/技术/Hexo/How_to_add_tags_page/</id>
+    <link href="https://arstead.github.io/2017/01/28/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_tags_page/"/>
+    <id>https://arstead.github.io/2017/01/28/技术/Hexo/How_to_add_tags_page/</id>
     <published>2017-01-28T10:02:55.000Z</published>
     <updated>2017-03-05T13:54:16.702Z</updated>
     
@@ -313,19 +313,19 @@ print(mat_model[&apos;meta&apos;].classes.description[idx])
     
     </summary>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="Hexo" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
+      <category term="Hexo" scheme="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
     
     
-      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://arstead.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title>一个人的能力(二)</title>
-    <link href="http://yoursite.com/2017/01/27/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/(%E4%BA%8C)/"/>
-    <id>http://yoursite.com/2017/01/27/小说/一个人的能力/(二)/</id>
+    <link href="https://arstead.github.io/2017/01/27/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/(%E4%BA%8C)/"/>
+    <id>https://arstead.github.io/2017/01/27/小说/一个人的能力/(二)/</id>
     <published>2017-01-27T11:06:55.000Z</published>
     <updated>2017-03-05T13:54:45.739Z</updated>
     
@@ -344,19 +344,19 @@ print(mat_model[&apos;meta&apos;].classes.description[idx])
     
     </summary>
     
-      <category term="小说" scheme="http://yoursite.com/categories/%E5%B0%8F%E8%AF%B4/"/>
+      <category term="小说" scheme="https://arstead.github.io/categories/%E5%B0%8F%E8%AF%B4/"/>
     
-      <category term="一个人的能力" scheme="http://yoursite.com/categories/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/"/>
+      <category term="一个人的能力" scheme="https://arstead.github.io/categories/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/"/>
     
     
-      <category term="小说" scheme="http://yoursite.com/tags/%E5%B0%8F%E8%AF%B4/"/>
+      <category term="小说" scheme="https://arstead.github.io/tags/%E5%B0%8F%E8%AF%B4/"/>
     
   </entry>
   
   <entry>
     <title>一个人的能力(一)</title>
-    <link href="http://yoursite.com/2017/01/27/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/(%E4%B8%80)/"/>
-    <id>http://yoursite.com/2017/01/27/小说/一个人的能力/(一)/</id>
+    <link href="https://arstead.github.io/2017/01/27/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/(%E4%B8%80)/"/>
+    <id>https://arstead.github.io/2017/01/27/小说/一个人的能力/(一)/</id>
     <published>2017-01-27T10:51:55.000Z</published>
     <updated>2017-03-05T13:54:36.659Z</updated>
     
@@ -380,19 +380,19 @@ print(mat_model[&apos;meta&apos;].classes.description[idx])
     
     </summary>
     
-      <category term="小说" scheme="http://yoursite.com/categories/%E5%B0%8F%E8%AF%B4/"/>
+      <category term="小说" scheme="https://arstead.github.io/categories/%E5%B0%8F%E8%AF%B4/"/>
     
-      <category term="一个人的能力" scheme="http://yoursite.com/categories/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/"/>
+      <category term="一个人的能力" scheme="https://arstead.github.io/categories/%E5%B0%8F%E8%AF%B4/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E8%83%BD%E5%8A%9B/"/>
     
     
-      <category term="小说" scheme="http://yoursite.com/tags/%E5%B0%8F%E8%AF%B4/"/>
+      <category term="小说" scheme="https://arstead.github.io/tags/%E5%B0%8F%E8%AF%B4/"/>
     
   </entry>
   
   <entry>
     <title>序</title>
-    <link href="http://yoursite.com/2017/01/22/Preface/"/>
-    <id>http://yoursite.com/2017/01/22/Preface/</id>
+    <link href="https://arstead.github.io/2017/01/22/Preface/"/>
+    <id>https://arstead.github.io/2017/01/22/Preface/</id>
     <published>2017-01-22T13:34:58.000Z</published>
     <updated>2017-02-06T18:44:30.398Z</updated>
     
