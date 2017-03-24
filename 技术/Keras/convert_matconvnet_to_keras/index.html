@@ -85,17 +85,20 @@
 
 
 
-<meta name="description" content="在最开始接触深度学习的时候，很经常使用MatConvNet。主要是因为里面的预训练模型比较丰富，在fine-tune的过程中能获得比较好的结果，很适合新手使用。但是随着对深度网络越来越深入之后，很多就需要自己去设计层结构，损失函数，规则项等等，这个时候MatConvNet就显得力不从心了。而keras的出现就大大简化了这一过程，良好的接口让构建模型简单快速，而且可扩展性强。对于需要深入底层的实现，">
+<meta name="description" content="总字数：约10000字，阅读时间：约10分钟
+在最开始接触深度学习的时候，很经常使用MatConvNet。主要是因为里面的预训练模型比较丰富，在fine-tune的过程中能获得比较好的结果，很适合新手使用。但是随着对深度网络越来越深入之后，很多就需要自己去设计层结构，损失函数，规则项等等，这个时候MatConvNet就显得力不从心了。而keras的出现就大大简化了这一过程，良好的接口让构建模型简单">
 <meta property="og:type" content="article">
 <meta property="og:title" content="将matconvnet预训练模型转成keras模型">
 <meta property="og:url" content="https://arstead.github.io/技术/Keras/convert_matconvnet_to_keras/index.html">
 <meta property="og:site_name" content="Hi, Thinking">
-<meta property="og:description" content="在最开始接触深度学习的时候，很经常使用MatConvNet。主要是因为里面的预训练模型比较丰富，在fine-tune的过程中能获得比较好的结果，很适合新手使用。但是随着对深度网络越来越深入之后，很多就需要自己去设计层结构，损失函数，规则项等等，这个时候MatConvNet就显得力不从心了。而keras的出现就大大简化了这一过程，良好的接口让构建模型简单快速，而且可扩展性强。对于需要深入底层的实现，">
+<meta property="og:description" content="总字数：约10000字，阅读时间：约10分钟
+在最开始接触深度学习的时候，很经常使用MatConvNet。主要是因为里面的预训练模型比较丰富，在fine-tune的过程中能获得比较好的结果，很适合新手使用。但是随着对深度网络越来越深入之后，很多就需要自己去设计层结构，损失函数，规则项等等，这个时候MatConvNet就显得力不从心了。而keras的出现就大大简化了这一过程，良好的接口让构建模型简单">
 <meta property="og:image" content="https://arstead.github.io/技术/Keras/convert_matconvnet_to_keras/border_mode.jpg">
-<meta property="og:updated_time" content="2017-03-20T13:50:45.421Z">
+<meta property="og:updated_time" content="2017-03-24T04:42:31.233Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="将matconvnet预训练模型转成keras模型">
-<meta name="twitter:description" content="在最开始接触深度学习的时候，很经常使用MatConvNet。主要是因为里面的预训练模型比较丰富，在fine-tune的过程中能获得比较好的结果，很适合新手使用。但是随着对深度网络越来越深入之后，很多就需要自己去设计层结构，损失函数，规则项等等，这个时候MatConvNet就显得力不从心了。而keras的出现就大大简化了这一过程，良好的接口让构建模型简单快速，而且可扩展性强。对于需要深入底层的实现，">
+<meta name="twitter:description" content="总字数：约10000字，阅读时间：约10分钟
+在最开始接触深度学习的时候，很经常使用MatConvNet。主要是因为里面的预训练模型比较丰富，在fine-tune的过程中能获得比较好的结果，很适合新手使用。但是随着对深度网络越来越深入之后，很多就需要自己去设计层结构，损失函数，规则项等等，这个时候MatConvNet就显得力不从心了。而keras的出现就大大简化了这一过程，良好的接口让构建模型简单">
 <meta name="twitter:image" content="https://arstead.github.io/技术/Keras/convert_matconvnet_to_keras/border_mode.jpg">
 
 
@@ -451,7 +454,8 @@
       
 
       
-        <p>在最开始接触深度学习的时候，很经常使用MatConvNet。主要是因为里面的预训练模型比较丰富，在fine-tune的过程中能获得比较好的结果，很适合新手使用。但是随着对深度网络越来越深入之后，很多就需要自己去设计层结构，损失函数，规则项等等，这个时候MatConvNet就显得力不从心了。而keras的出现就大大简化了这一过程，良好的接口让构建模型简单快速，而且可扩展性强。对于需要深入底层的实现，也可以使用TensorFlow或Theano来实现，确实是一个很好的工具。</p>
+        <p><small><em>总字数：约10000字，阅读时间：约10分钟</em></small></p>
+<p>在最开始接触深度学习的时候，很经常使用MatConvNet。主要是因为里面的预训练模型比较丰富，在fine-tune的过程中能获得比较好的结果，很适合新手使用。但是随着对深度网络越来越深入之后，很多就需要自己去设计层结构，损失函数，规则项等等，这个时候MatConvNet就显得力不从心了。而keras的出现就大大简化了这一过程，良好的接口让构建模型简单快速，而且可扩展性强。对于需要深入底层的实现，也可以使用TensorFlow或Theano来实现，确实是一个很好的工具。</p>
 <p>不过虽然Keras上面也有很多预训练好的模型，可以用来进行fine-tune，但是其丰富程度远没有MatConvNet的多。思来想去，决定自己写一个函数来实现MatConvNet模型对Keras模型的一个转变。</p>
 <a id="more"></a>
 <h3 id="读取mat文件"><a href="#读取mat文件" class="headerlink" title="读取mat文件"></a>读取mat文件</h3><p>在Python中，要读取Matlab的.mat文件需要借助Scipy库中的io模块。在Scipy.io中有一个loadmat函数，可以实现对.mat文件的读取。注：本文以vgg-face模型为例进行说明。</p>
