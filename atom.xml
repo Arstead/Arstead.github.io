@@ -92,8 +92,8 @@ print(mat_model[&apos;meta&apos;].classes.description[idx])
   
   <entry>
     <title>Keras源码解析(1)-入门</title>
-    <link href="https://arstead.github.io/%E6%8A%80%E6%9C%AF/Keras/keras_source_code_analysis_1_Introduction/"/>
-    <id>https://arstead.github.io/技术/Keras/keras_source_code_analysis_1_Introduction/</id>
+    <link href="https://arstead.github.io/%E6%8A%80%E6%9C%AF/Keras/keras_source_code_analysis_1_introduction/"/>
+    <id>https://arstead.github.io/技术/Keras/keras_source_code_analysis_1_introduction/</id>
     <published>2017-03-18T11:54:58.000Z</published>
     <updated>2017-03-24T04:41:37.921Z</updated>
     
