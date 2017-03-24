@@ -4,6 +4,29 @@
 
     
   <url>
+    <loc>https://arstead.github.io/%E6%8A%80%E6%9C%AF/Keras/convert_matconvnet_to_keras/</loc>
+    <lastmod>2017-03-24T04:47:42.972Z</lastmod>
+    <data>
+        <display>
+        <title>将matconvnet预训练模型转成keras模型</title>
+        <pubTime>2017-03-20T13:00:58.000Z</pubTime>
+        
+        <tag>技术</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+             
+              <breadCrumb title="Keras" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/Keras/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://arstead.github.io/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_algolia_into_hexo/</loc>
     <lastmod>2017-03-24T04:43:14.299Z</lastmod>
     <data>
@@ -43,29 +66,6 @@
           
              
               <breadCrumb title="Hexo" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://arstead.github.io/%E6%8A%80%E6%9C%AF/Keras/convert_matconvnet_to_keras/</loc>
-    <lastmod>2017-03-24T04:42:31.233Z</lastmod>
-    <data>
-        <display>
-        <title>将matconvnet预训练模型转成keras模型</title>
-        <pubTime>2017-03-20T13:00:58.000Z</pubTime>
-        
-        <tag>技术</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-             
-              <breadCrumb title="Keras" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/Keras/"/>
           
         </display>
     </data>
