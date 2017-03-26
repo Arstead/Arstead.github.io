@@ -95,8 +95,10 @@
 自从学习了Python之后，一直想找一个好的Python IDE环境，但是一直没有找到心仪的。我认为，程序员一定要对自己好一点，每天面对的编程界面一定要赏心悦目，不然如何面对一天的工作。Pycharm的工作界面略显难看，换了各种主题都没有找到合适的，而且Pycharm实在有点大，很多功能用不上，却让运行变得很卡。也曾经使用过一段时间VS (visual s">
 <meta property="og:image" content="https://arstead.github.io/技术/Python/build_python_environment_with_sublime_text/main_UI.png">
 <meta property="og:image" content="https://arstead.github.io/技术/Python/build_python_environment_with_sublime_text/pcip.png">
+<meta property="og:image" content="https://arstead.github.io/技术/Python/build_python_environment_with_sublime_text/SFTP.png">
+<meta property="og:image" content="https://arstead.github.io/技术/Python/build_python_environment_with_sublime_text/SFTP-setting.png">
 <meta property="og:image" content="https://arstead.github.io/技术/Python/build_python_environment_with_sublime_text/grid_layout.png">
-<meta property="og:updated_time" content="2017-03-24T04:41:23.644Z">
+<meta property="og:updated_time" content="2017-03-26T03:26:13.173Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用Sublime Text 3打造一个完美的python工作环境">
 <meta name="twitter:description" content="总字数：约3600字，阅读时间：约7分钟
@@ -473,6 +475,13 @@
 <p>这个可以根据自己的喜好来添加，我设置的是F1是运行当前文件，F2是用PDB调试程序，F3是调出交互式Python编译器。这样，基本的环境就搭建完了。</p>
 <h3 id="SublimeLinter-pep8"><a href="#SublimeLinter-pep8" class="headerlink" title="SublimeLinter-pep8"></a>SublimeLinter-pep8</h3><p><a href="https://github.com/SublimeLinter/SublimeLinter-pep8" target="_blank" rel="external">SublimeLinter-pep8</a>是一个python代码样式的检测工具，可以用于修正python代码的书写方法，能让自己的代码看上去更加清爽一点。</p>
 <p>同样，这个插件可以使用Package Control来进行安装，在Install Package中输入SublimeLinter-pep8，然后安装即可。安装完后，选取需要修改样式的代码，点击鼠标右键，可以看到有一个AutoPEP8选项，然后点击Format即可。这款插件还有显示样式错误，设置快捷键等等功能，但是由于我有自己的代码风格，所以用这个比较少，只是在无法确定一些风格怎么处理的时候才会用到，所以也就懒得继续探索了。想要继续探索的同学可以谷歌一下。</p>
+<h3 id="SFTP"><a href="#SFTP" class="headerlink" title="SFTP"></a>SFTP</h3><p><a href="https://wbond.net/sublime_packages/sftp" target="_blank" rel="external">SFTP</a>是一款特别棒的远程同步插件。很多时候我们需要将写完的代码同步到服务器上去执行，传统方式就是切换到FTP上，然后将代码拷到服务器上，然后回到远程控制台去执行。这样操作相当繁琐。然后我找到了SFTP能实现远程代码同步的插件。最后的结果大概像下面这样。这个插件反馈很友好，能及时反馈同步的文件及结果。</p>
+<img src="/技术/Python/build_python_environment_with_sublime_text/SFTP.png" alt="SFTP.png" title="">
+<p>具体安装方式跟所有插件一样，使用Package Control，选择SFTP即可。不过这个部署的服务器好像需要科学上网才能连接上，而且这个服务器的地址不在在线PCA列表中。我一开始下了很久都提示连接失败，直到我使用全局代理才成功下载。</p>
+<p>安装完后，选择File-&gt;SFTP/FTP-&gt;Set up server，配置自己的服务器信息。然后保存，保存的时候他的默认路劲是user目录下的SFTP文件夹，没有默认文件名，我们可以以工程名或者服务器名来命名这个文件。</p>
+<p>完成之后选择你要同步的文件夹，在边栏选择你要同步的文件或文件夹，右键SFTP/FTP-&gt;Map to Remote。这个时候会在当前文件夹下创建一个配置文档，主要是一些同步操作的配置。具体参数的细节可以在<a href="https://wbond.net/sublime_packages/sftp/settings" target="_blank" rel="external">官网SFTP</a>找到，我的配置如下图所示。</p>
+<img src="/技术/Python/build_python_environment_with_sublime_text/SFTP-setting.png" alt="SFTP-setting.png" title="">
+<p>保存好配置之后，再右键SFTP/FTP里面的选项变成了同步操作，这样他就会自动同步了。</p>
 <h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><p>正常的ST3界面只有单纯的输入界面和选项卡。调试或者运行会出现新的选项卡，相互之间切换也是一件很麻烦的事情，所以需要改变一下布局。</p>
 <p>在ST3的View-&gt;Layout中有很多布局形式，最开始的时候，我使用的是Grid的四格布局。但是我觉得显示的效果并不是很好，每个输入框太小，代码都看不全。</p>
 <img src="/技术/Python/build_python_environment_with_sublime_text/grid_layout.png" alt="grid_layout.png" title="">
@@ -687,7 +696,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Sublime-Text-3"><span class="nav-number">1.</span> <span class="nav-text">Sublime Text 3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SublimeREPL"><span class="nav-number">2.</span> <span class="nav-text">SublimeREPL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SublimeLinter-pep8"><span class="nav-number">3.</span> <span class="nav-text">SublimeLinter-pep8</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#布局"><span class="nav-number">4.</span> <span class="nav-text">布局</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Sublime-Text-3"><span class="nav-number">1.</span> <span class="nav-text">Sublime Text 3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SublimeREPL"><span class="nav-number">2.</span> <span class="nav-text">SublimeREPL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SublimeLinter-pep8"><span class="nav-number">3.</span> <span class="nav-text">SublimeLinter-pep8</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SFTP"><span class="nav-number">4.</span> <span class="nav-text">SFTP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#布局"><span class="nav-number">5.</span> <span class="nav-text">布局</span></a></li></ol></div>
             
 
           </div>
