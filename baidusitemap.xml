@@ -4,19 +4,22 @@
 
     
   <url>
-    <loc>https://arstead.github.io/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/The_Devotion_of_Suspect_X/</loc>
-    <lastmod>2017-03-28T15:06:51.177Z</lastmod>
+    <loc>https://arstead.github.io/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_algolia_into_hexo/</loc>
+    <lastmod>2017-03-28T15:12:13.125Z</lastmod>
     <data>
         <display>
-        <title>《嫌疑人X的献身》 东野圭吾 著</title>
-        <pubTime>2017-03-28T03:18:55.000Z</pubTime>
+        <title>在Hexo+NexT中添加algolia search</title>
+        <pubTime>2017-01-29T12:02:55.000Z</pubTime>
         
-        <tag>读书笔记</tag>
+        <tag>技术</tag>
          
          
            
              
-              <breadCrumb title="读书笔记" url="https://arstead.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+              <breadCrumb title="技术" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+             
+              <breadCrumb title="Hexo" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
           
         </display>
     </data>
@@ -25,7 +28,7 @@
     
   <url>
     <loc>https://arstead.github.io/%E6%8A%80%E6%9C%AF/Keras/convert_matconvnet_to_keras/</loc>
-    <lastmod>2017-03-28T03:17:49.499Z</lastmod>
+    <lastmod>2017-03-28T15:11:43.215Z</lastmod>
     <data>
         <display>
         <title>将MatConvNet预训练模型转成Keras模型</title>
@@ -40,6 +43,49 @@
           
              
               <breadCrumb title="Keras" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/Keras/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://arstead.github.io/%E6%8A%80%E6%9C%AF/Python/build_python_environment_with_sublime_text/</loc>
+    <lastmod>2017-03-28T15:11:22.364Z</lastmod>
+    <data>
+        <display>
+        <title>用Sublime Text 3打造一个完美的python工作环境</title>
+        <pubTime>2017-02-26T06:00:58.000Z</pubTime>
+        
+        <tag>技术</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+             
+              <breadCrumb title="python" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://arstead.github.io/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/The_Devotion_of_Suspect_X/</loc>
+    <lastmod>2017-03-28T15:10:57.149Z</lastmod>
+    <data>
+        <display>
+        <title>《嫌疑人X的献身》 东野圭吾 著</title>
+        <pubTime>2017-03-28T03:18:55.000Z</pubTime>
+        
+        <tag>读书笔记</tag>
+         
+         
+           
+             
+              <breadCrumb title="读书笔记" url="https://arstead.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
           
         </display>
     </data>
@@ -69,52 +115,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>https://arstead.github.io/%E6%8A%80%E6%9C%AF/Python/build_python_environment_with_sublime_text/</loc>
-    <lastmod>2017-03-26T06:28:02.377Z</lastmod>
-    <data>
-        <display>
-        <title>用Sublime Text 3打造一个完美的python工作环境</title>
-        <pubTime>2017-02-26T06:00:58.000Z</pubTime>
-        
-        <tag>技术</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-             
-              <breadCrumb title="python" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://arstead.github.io/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_algolia_into_hexo/</loc>
-    <lastmod>2017-03-24T04:43:14.299Z</lastmod>
-    <data>
-        <display>
-        <title>在Hexo+NexT中添加algolia search</title>
-        <pubTime>2017-01-29T12:02:55.000Z</pubTime>
-        
-        <tag>技术</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-             
-              <breadCrumb title="Hexo" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>https://arstead.github.io/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_tags_page/</loc>

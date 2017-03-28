@@ -100,7 +100,7 @@
 <meta property="og:image" content="https://arstead.github.io/技术/Hexo/How_to_add_algolia_into_hexo/algolia_index.png">
 <meta property="og:image" content="https://arstead.github.io/技术/Hexo/How_to_add_algolia_into_hexo/undefine.png">
 <meta property="og:image" content="https://arstead.github.io/技术/Hexo/How_to_add_algolia_into_hexo/black.png">
-<meta property="og:updated_time" content="2017-03-24T04:43:14.299Z">
+<meta property="og:updated_time" content="2017-03-28T15:12:13.125Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在Hexo+NexT中添加algolia search">
 <meta name="twitter:description" content="总字数：约3000字，阅读时间：约5分钟
@@ -465,7 +465,7 @@
 <p>这是一个法国初创公司做的，致力于在毫秒级时间内完成内容搜索，具体的细节可以上官方网站 <a href="https://www.algolia.com/" target="_blank" rel="external">algolia</a> 。搜索呈现像下面这样:</p>
 <img src="/技术/Hexo/How_to_add_algolia_into_hexo/result.png" alt="result.png" title="">
 <a id="more"></a>
-<h3 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h3><ol>
+<h4 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h4><ol>
 <li><p>首先，上 <a href="https://www.algolia.com/" target="_blank" rel="external">algolia</a> 上注册一个账号，免费注册的账号可以试用14天，这期间所有的高级功能均可以使用。过了这个期限之后，只有部分功能可以使用，免费账户总共有10,000条记录，每个月有100,000的可操作数，对于一般用户应该是够用了。</p>
 <p> 注册了账户之后，页面如下图所示，点击NEW INDEX。需要输入一个index name， 注意这个名字最好只包含字母，数字和下划线(_)，因为后端用js调用数据的时候需要用到这个index name，所以如果这个字符串里面出现了一些跟js语法像冲突的符号很有可能识别不了。</p>
  <img src="/技术/Hexo/How_to_add_algolia_into_hexo/algolia.png" alt="algolia.png" title="">
@@ -499,10 +499,10 @@
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g -d</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><h4 id="页面空白"><a href="#页面空白" class="headerlink" title="页面空白"></a>页面空白</h4><p>在安装的时候出现了文章内容加载不出来，但是查看源码的时候HTML是完整的，而且对应位置的链接也可以，如下图一样：</p>
+<h4 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h4><h5 id="页面空白"><a href="#页面空白" class="headerlink" title="页面空白"></a>页面空白</h5><p>在安装的时候出现了文章内容加载不出来，但是查看源码的时候HTML是完整的，而且对应位置的链接也可以，如下图一样：</p>
 <img src="/技术/Hexo/How_to_add_algolia_into_hexo/black.png" alt="black.png" title="">
 <p>查看加载情况的时候发现js调用异常，发现是因为index name里面包含了引号，导致algolia后端的js出现异常，所以页面加载出现问题。这个时候只需要修改一下index name就可以了。</p>
-<h4 id="搜索后无法正确跳转"><a href="#搜索后无法正确跳转" class="headerlink" title="搜索后无法正确跳转"></a>搜索后无法正确跳转</h4><p>搜索后出现无法正确跳转的原因是algolia没有获取path字段，所以最后的跳转地址没有正确填充，有可能会出现点击没有反应，也有可能像上文中提到的出现404异常，这个时候只需要按上文所说，在.\hexo\node_modules\hexo-algolia\lib\command.js文件里，添加path字段到storedPost变量中即可。</p>
+<h5 id="搜索后无法正确跳转"><a href="#搜索后无法正确跳转" class="headerlink" title="搜索后无法正确跳转"></a>搜索后无法正确跳转</h5><p>搜索后出现无法正确跳转的原因是algolia没有获取path字段，所以最后的跳转地址没有正确填充，有可能会出现点击没有反应，也有可能像上文中提到的出现404异常，这个时候只需要按上文所说，在.\hexo\node_modules\hexo-algolia\lib\command.js文件里，添加path字段到storedPost变量中即可。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var storedPost = _.pick(data, [&apos;title&apos;, &apos;date&apos;, &apos;slug&apos;, &apos;path&apos;, &apos;content&apos;, &apos;excerpt&apos;, &apos;permalink&apos;]);</div></pre></td></tr></table></figure>
 
       
@@ -712,7 +712,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装过程"><span class="nav-number">1.</span> <span class="nav-text">安装过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#异常处理"><span class="nav-number">2.</span> <span class="nav-text">异常处理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#页面空白"><span class="nav-number">2.1.</span> <span class="nav-text">页面空白</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#搜索后无法正确跳转"><span class="nav-number">2.2.</span> <span class="nav-text">搜索后无法正确跳转</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装过程"><span class="nav-number">1.</span> <span class="nav-text">安装过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#异常处理"><span class="nav-number">2.</span> <span class="nav-text">异常处理</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#页面空白"><span class="nav-number">2.1.</span> <span class="nav-text">页面空白</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#搜索后无法正确跳转"><span class="nav-number">2.2.</span> <span class="nav-text">搜索后无法正确跳转</span></a></li></ol></li></ol></div>
             
 
           </div>
