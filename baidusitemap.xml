@@ -4,35 +4,31 @@
 
     
   <url>
-    <loc>https://arstead.github.io/%E6%8A%80%E6%9C%AF/Python/build_python_environment_with_sublime_text/</loc>
-    <lastmod>2017-03-26T03:26:13.173Z</lastmod>
+    <loc>https://arstead.github.io/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/The_Devotion_of_Suspect_X/</loc>
+    <lastmod>2017-03-28T15:06:51.177Z</lastmod>
     <data>
         <display>
-        <title>用Sublime Text 3打造一个完美的python工作环境</title>
-        <pubTime>2017-02-26T06:00:58.000Z</pubTime>
+        <title>《嫌疑人X的献身》 东野圭吾 著</title>
+        <pubTime>2017-03-28T03:18:55.000Z</pubTime>
         
-        <tag>技术</tag>
+        <tag>读书笔记</tag>
          
          
            
              
-              <breadCrumb title="技术" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-             
-              <breadCrumb title="python" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/python/"/>
+              <breadCrumb title="读书笔记" url="https://arstead.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
           
         </display>
     </data>
     </url>
 
     
-    
   <url>
     <loc>https://arstead.github.io/%E6%8A%80%E6%9C%AF/Keras/convert_matconvnet_to_keras/</loc>
-    <lastmod>2017-03-24T06:51:16.690Z</lastmod>
+    <lastmod>2017-03-28T03:17:49.499Z</lastmod>
     <data>
         <display>
-        <title>将matconvnet预训练模型转成keras模型</title>
+        <title>将MatConvNet预训练模型转成Keras模型</title>
         <pubTime>2017-03-20T13:00:58.000Z</pubTime>
         
         <tag>技术</tag>
@@ -52,7 +48,7 @@
     
   <url>
     <loc>https://arstead.github.io/%E6%8A%80%E6%9C%AF/Keras/keras_source_code_analysis_1_introduction/</loc>
-    <lastmod>2017-03-24T06:51:14.613Z</lastmod>
+    <lastmod>2017-03-28T03:17:38.152Z</lastmod>
     <data>
         <display>
         <title>Keras源码解析(1)-入门</title>
@@ -66,7 +62,31 @@
               <breadCrumb title="技术" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
           
              
-              <breadCrumb title="keras" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/keras/"/>
+              <breadCrumb title="Keras" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/Keras/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>https://arstead.github.io/%E6%8A%80%E6%9C%AF/Python/build_python_environment_with_sublime_text/</loc>
+    <lastmod>2017-03-26T06:28:02.377Z</lastmod>
+    <data>
+        <display>
+        <title>用Sublime Text 3打造一个完美的python工作环境</title>
+        <pubTime>2017-02-26T06:00:58.000Z</pubTime>
+        
+        <tag>技术</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+             
+              <breadCrumb title="python" url="https://arstead.github.io/categories/%E6%8A%80%E6%9C%AF/python/"/>
           
         </display>
     </data>
