@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://arstead.github.io/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E7%AA%93%E3%81%8E%E3%82%8F%E3%81%AE%E3%83%88%E3%83%83%E3%83%88%E3%81%A1%E3%82%83%E3%82%93/</loc>
+    
+    <lastmod>2017-04-06T15:04:53.665Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://arstead.github.io/%E6%8A%80%E6%9C%AF/Hexo/How_to_add_algolia_into_hexo/</loc>
     
     <lastmod>2017-03-28T15:12:13.125Z</lastmod>
