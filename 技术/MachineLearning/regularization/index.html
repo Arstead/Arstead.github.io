@@ -67,7 +67,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="技术," />
+  <meta name="keywords" content="机器学习," />
 
 
 
@@ -85,19 +85,21 @@
 
 
 
-<meta name="description" content="总字数：约1300字，阅读时间：约3分钟
-添加标签和分类在Hexo中，有两种管理的方式，一种是使用分类的方式，这是一种有层次的分类方式，适用于大类别下套小类别的分类方式，例如：编程语言-python等。而还有一种是使用标签的方式，这种方式适用于同一级别的类别分类方式，例如：小说，论文等。对应于具体的文章，可以在Front-matter中进行设定，例如：">
+<meta name="description" content="伴随这深度学习的流行，机器学习这个领域开始受到大家广泛的关注。特别是在Google阿尔法狗在围棋领域获得让人震惊的战绩之后，机器学习开始被围观群众神话。大家开始认为机器可以思考了，机器已经学习了如何思维了。作为一个机器学习领域的小学生，我只能说，距离计算机能独立思考，真的还远着呢。
+抓个小球吧在我看来，机器学习的一个核心假设，来源与相同观测环境下采样的数据样本，是同分布的。什么意思，我们来看一个初">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在Hexo+NexT中添加标签和分类">
-<meta property="og:url" content="https://arstead.github.io/技术/Hexo/How_to_add_tags_page/index.html">
+<meta property="og:title" content="来聊聊机器学习">
+<meta property="og:url" content="https://arstead.github.io/技术/MachineLearning/regularization/index.html">
 <meta property="og:site_name" content="Hi, Thinking">
-<meta property="og:description" content="总字数：约1300字，阅读时间：约3分钟
-添加标签和分类在Hexo中，有两种管理的方式，一种是使用分类的方式，这是一种有层次的分类方式，适用于大类别下套小类别的分类方式，例如：编程语言-python等。而还有一种是使用标签的方式，这种方式适用于同一级别的类别分类方式，例如：小说，论文等。对应于具体的文章，可以在Front-matter中进行设定，例如：">
-<meta property="og:updated_time" content="2017-03-24T04:42:58.138Z">
+<meta property="og:description" content="伴随这深度学习的流行，机器学习这个领域开始受到大家广泛的关注。特别是在Google阿尔法狗在围棋领域获得让人震惊的战绩之后，机器学习开始被围观群众神话。大家开始认为机器可以思考了，机器已经学习了如何思维了。作为一个机器学习领域的小学生，我只能说，距离计算机能独立思考，真的还远着呢。
+抓个小球吧在我看来，机器学习的一个核心假设，来源与相同观测环境下采样的数据样本，是同分布的。什么意思，我们来看一个初">
+<meta property="og:image" content="https://arstead.github.io/技术/MachineLearning/regularization/ball.jpg">
+<meta property="og:updated_time" content="2017-07-27T02:30:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在Hexo+NexT中添加标签和分类">
-<meta name="twitter:description" content="总字数：约1300字，阅读时间：约3分钟
-添加标签和分类在Hexo中，有两种管理的方式，一种是使用分类的方式，这是一种有层次的分类方式，适用于大类别下套小类别的分类方式，例如：编程语言-python等。而还有一种是使用标签的方式，这种方式适用于同一级别的类别分类方式，例如：小说，论文等。对应于具体的文章，可以在Front-matter中进行设定，例如：">
+<meta name="twitter:title" content="来聊聊机器学习">
+<meta name="twitter:description" content="伴随这深度学习的流行，机器学习这个领域开始受到大家广泛的关注。特别是在Google阿尔法狗在围棋领域获得让人震惊的战绩之后，机器学习开始被围观群众神话。大家开始认为机器可以思考了，机器已经学习了如何思维了。作为一个机器学习领域的小学生，我只能说，距离计算机能独立思考，真的还远着呢。
+抓个小球吧在我看来，机器学习的一个核心假设，来源与相同观测环境下采样的数据样本，是同分布的。什么意思，我们来看一个初">
+<meta name="twitter:image" content="https://arstead.github.io/技术/MachineLearning/regularization/ball.jpg">
 
 
 
@@ -125,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="https://arstead.github.io/技术/Hexo/How_to_add_tags_page/"/>
+  <link rel="canonical" href="https://arstead.github.io/技术/MachineLearning/regularization/"/>
 
 
 
 
 
-  <title> 在Hexo+NexT中添加标签和分类 | Hi, Thinking </title>
+  <title> 来聊聊机器学习 | Hi, Thinking </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -323,7 +325,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://arstead.github.io/技术/Hexo/How_to_add_tags_page/">
+  <link itemprop="mainEntityOfPage" href="https://arstead.github.io/技术/MachineLearning/regularization/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Kivi">
@@ -347,7 +349,7 @@
             
             
               
-                在Hexo+NexT中添加标签和分类
+                来聊聊机器学习
               
             
           </h1>
@@ -362,8 +364,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-28T18:02:55+08:00">
-                2017-01-28
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-26T11:00:58+08:00">
+                2017-07-26
               </time>
             
 
@@ -385,19 +387,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
                   </a>
                 </span>
 
@@ -415,8 +406,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/技术/Hexo/How_to_add_tags_page/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="技术/Hexo/How_to_add_tags_page/" itemprop="commentsCount"></span>
+                <a href="/技术/MachineLearning/regularization/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="技术/MachineLearning/regularization/" itemprop="commentsCount"></span>
                 </a>
               </span>
               <!--/noindex-->
@@ -427,7 +418,7 @@
 
           
           
-             <span id="/技术/Hexo/How_to_add_tags_page/" class="leancloud_visitors" data-flag-title="在Hexo+NexT中添加标签和分类">
+             <span id="/技术/MachineLearning/regularization/" class="leancloud_visitors" data-flag-title="来聊聊机器学习">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -454,26 +445,76 @@
       
 
       
-        <p><small><em>总字数：约1300字，阅读时间：约3分钟</em></small></p>
-<h3 id="添加标签和分类"><a href="#添加标签和分类" class="headerlink" title="添加标签和分类"></a>添加标签和分类</h3><p>在Hexo中，有两种管理的方式，一种是使用分类的方式，这是一种有层次的分类方式，适用于大类别下套小类别的分类方式，例如：编程语言-python等。而还有一种是使用标签的方式，这种方式适用于同一级别的类别分类方式，例如：小说，论文等。<br>对应于具体的文章，可以在Front-matter中进行设定，例如：</p>
-<a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 标签</div><div class="line">tages: </div><div class="line"> -小说</div><div class="line"> -论文</div><div class="line">---</div><div class="line"></div><div class="line">---</div><div class="line">title: 分类</div><div class="line">categories: </div><div class="line"> -编程语言</div><div class="line"> -python</div><div class="line">---</div></pre></td></tr></table></figure>
-<p>在这种情况下，Hexo将会自动的将每一篇文章进行归档。</p>
-<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><p>在很多时候我们点击标签页和分类页查看具体情况的时候会出现一些问题。这里描述一下常见的两种情况。</p>
-<h4 id="文件路径包含中文"><a href="#文件路径包含中文" class="headerlink" title="文件路径包含中文"></a>文件路径包含中文</h4><p>在很多时候会报下面这种错误</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TypeError: The header content contains invalid characters</div></pre></td></tr></table></figure>
-<p>出现这种问题的主要原因是路径中出现了中文，只需要将分类的路径改成英文即可。</p>
-<h4 id="没有生产标签页和分类页"><a href="#没有生产标签页和分类页" class="headerlink" title="没有生产标签页和分类页"></a>没有生产标签页和分类页</h4><p>有时候还会出现下面这种问题</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cannot get /tags/</div><div class="line">cannot get /categories/</div></pre></td></tr></table></figure>
-<p>出现这种问题是因为配置路径和实际路径不对。配置路径在主题文件夹(.\hexo\themes\next)中的_config.yml文件里面。找到下面这样的描述，例如我使用tags表示标签页。需要检查一下是否在.\hexo\source文件夹中存在tags文件夹，如果不存在则需要创建tags标签页。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  categories: /categories</div><div class="line">  tags: /tags</div><div class="line">  about: /about</div><div class="line">  #archives: /archives</div><div class="line">  #sitemap: /sitemap.xml</div><div class="line">  #commonweal: /404.html</div></pre></td></tr></table></figure>
-<p>创建标签页的方法是使用hexo中的指令来添加，以tags为例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page tags</div></pre></td></tr></table></figure>
-<p>执行这条指令之后，在.\hexo\source文件夹下会新增一个tags文件夹，里面有一个index.md。打开来之后里面只有title和date属性，我们需要添加一个type属性，修改成下面这样。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: tags</div><div class="line">date: 2017-01-28 01:55:09 #时间随意</div><div class="line">type: tags</div><div class="line">---</div></pre></td></tr></table></figure>
-<p>分类页的情况一样，需要把type属性改成categories</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: categories</div><div class="line">date: 2017-01-28 02:15:09 #时间随意</div><div class="line">type: categories</div><div class="line">---</div></pre></td></tr></table></figure>
-<p>完成修改之后重新生成部署即可。</p>
+        <p>伴随这深度学习的流行，机器学习这个领域开始受到大家广泛的关注。特别是在Google阿尔法狗在围棋领域获得让人震惊的战绩之后，机器学习开始被围观群众神话。大家开始认为机器可以思考了，机器已经学习了如何思维了。作为一个机器学习领域的小学生，我只能说，距离计算机能独立思考，真的还远着呢。</p>
+<h4 id="抓个小球吧"><a href="#抓个小球吧" class="headerlink" title="抓个小球吧"></a>抓个小球吧</h4><p>在我看来，机器学习的一个核心假设，来源与相同观测环境下采样的数据样本，是同分布的。什么意思，我们来看一个初中时候经常出现的一个问题，布袋里面抓小球。</p>
+<img src="/技术/MachineLearning/regularization/ball.jpg" alt="ball.jpg" title="">
+<p>我们有10个布袋子$a_1, a<em>2, …, a</em>{10}$，里面装了无限个球，但是每个袋子里面的球可能是任何几种颜色，但比例恒定。并且袋子是黑不溜秋的，看不到里面到底有什么颜色。现在，我们从第一个布袋子里面拿一个球出来，发现是蓝色的$x<em>{11}$，然后再从里面拿一个球出来，发现是绿色的$x</em>{12}$。不停的拿$n$次，我们就得到了一个颜色向量$\chi<em>1=[x</em>{11}, x<em>{12}, …, x</em>{1n}]$，这个我们就可以看作是一个样本，我们可以去另一个袋子里面同样拿n个小球，然后得到其他的样本。这样我们可以构成一个矩阵$X=[\chi_1, \chi_2, …, \chi_m]^T$，每一行是一个样本，一共m个样本。现在，来了一个喜欢开玩笑的小屁孩，他把所有的袋子都藏起来了，然后从其中一个袋子里面拿了n个球出来，给你看一下每一个球的颜色$\chi_t$，想为难你一下，问你是从哪个袋子里面拿出来的。</p>
+<p>我们一步一步简单的来看这个问题，如果说，每个袋子里面的球颜色都是固定的，而且各个袋子里的颜色都不一样，那机智的你应该一眼就知道了，这些球是来自于哪个袋子了。现在，我们增加一点难度，每个袋子里面有两种颜色的球，比例很不均衡，且袋子之间比例高的颜色各不相同。比如第一个袋子里面有红色和蓝色两种球，而且红：蓝是99:1，第二个袋子有黄色和红色两种球，而且黄色：红色是99:1，以此类推。这样的话，如果那个小屁孩给你拿出来的球发现，全是黄色的，这个时候认为这些小球是从第一个袋子里面拿的还是第二个袋子里面拿的呢？如果你觉得是从第二个袋子里面拿的，那个恭喜你。你已经了解到了最大似然估计的基本精髓了。直观的感觉上来说，我们知道，要从第一个袋子里面拿出n个黄色的球，概率是$p(a_1|\chi_t)=0.01^n$，而从第二个袋子中拿出来的概率是$p(a_2|\chi_t)=0.99^n$。所以从第二个袋子里面拿出来的概率比较大，所以我们倾向于选择第二个袋子。</p>
+<p>现在我们把情况再变的复杂一点，现在假设袋子里面颜色改成下面这样的情。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">袋子编号</th>
+<th style="text-align:center">颜色1，比例</th>
+<th style="text-align:center">颜色2，比例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">红色，0.8</td>
+<td style="text-align:center">绿色，0.2</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">蓝色，0.5</td>
+<td style="text-align:center">黄色，0.5</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">绿色，0.7</td>
+<td style="text-align:center">红色，0.3</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">黑色，0.2</td>
+<td style="text-align:center">白色，0.8</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">紫色，0.9</td>
+<td style="text-align:center">绿色，0.1</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">白色，0.3</td>
+<td style="text-align:center">红色，0.7</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">黑色，0.8</td>
+<td style="text-align:center">紫色，0.2</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">黄色，0.3</td>
+<td style="text-align:center">黑色，0.7</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">绿色，0.7</td>
+<td style="text-align:center">红色，0.3</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">红色，0.4</td>
+<td style="text-align:center">白色，0.6</td>
+</tr>
+</tbody>
+</table>
+<p>如果现在小屁孩给你看的颜色向量$\chi_t$是$(红, 红, 白, 红, 白, 白, 红, 红, 白, 白)$(假设n=10)。这个时候我们就要犯难了，到底是选5号袋子好还是选9号袋子好呢？(内心戏：如果是黄黑色的话，不管取出来是什么样的，我都会直接选7号袋子)</p>
+<p>首先，我们知道一点，就是选出来的小球顺序如何是没有关系的，我们需要关注的仅仅是各个颜色之间的比例。我们就可以它变成$\chi_s(red, white)=(5, 5)$<br>仿照我们上一个选择的方式，如果直接让我们判断选择哪一个袋子是特别困难的，这个时候我们就需要一个标准。最为自然的想法就是，我看哪一个袋子能拿出这样组合的概率最大，我就选择哪一个袋子。别的袋子不需要考虑了，我们重点看一看5号袋子和9号袋子。在5号袋子里面，拿出这种组合的概率是$p(a_5|\chi<em>t)=C</em>{10}^{5}0.3^50.7^5$，而在9号袋子拿出这种组合的概率是$p(a_9|\chi<em>t)=C</em>{10}^{5}0.4^50.6^5$。经过计算，我们发现，9号袋出现这种组合的概率比较高，我们选择9号袋子。</p>
+<h4 id="抓小球的机器学习框架"><a href="#抓小球的机器学习框架" class="headerlink" title="抓小球的机器学习框架"></a>抓小球的机器学习框架</h4><p>其实看到上面那个例子，我们大致了解了一下机器学习的一个流程。首先，需要训练数据，也就是$X$；然后我们需要提取特征，颜色比例；我们根据X能确定一个数据的分布情况，如上面的表格；其次确定我们的评判依据，最大似然准则；最后我们得出我们要预测的内容，9号袋子。</p>
 
       
     </div>
@@ -493,7 +534,7 @@
           
             <div class="copyright">
             <p><span>
-            <b>本文地址：</b><a href="/技术/Hexo/How_to_add_tags_page/" title="在Hexo+NexT中添加标签和分类">https://arstead.github.io/技术/Hexo/How_to_add_tags_page/</a><br /><b>转载请注明出处，谢谢！</b>
+            <b>本文地址：</b><a href="/技术/MachineLearning/regularization/" title="来聊聊机器学习">https://arstead.github.io/技术/MachineLearning/regularization/</a><br /><b>转载请注明出处，谢谢！</b>
             </span></p>
             </div>
           
@@ -512,7 +553,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/技术/" rel="tag"># 技术</a>
+            <a href="/tags/机器学习/" rel="tag"># 机器学习</a>
           
         </div>
       
@@ -521,8 +562,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/小说/一个人的能力/(二)/" rel="next" title="一个人的能力(二)">
-                <i class="fa fa-chevron-left"></i> 一个人的能力(二)
+              <a href="/随记/play_list/" rel="next" title="北京“划船”记录本">
+                <i class="fa fa-chevron-left"></i> 北京“划船”记录本
               </a>
             
           </div>
@@ -530,10 +571,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/技术/Hexo/How_to_add_algolia_into_hexo/" rel="prev" title="在Hexo+NexT中添加algolia search">
-                在Hexo+NexT中添加algolia search <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -677,7 +714,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#添加标签和分类"><span class="nav-number">1.</span> <span class="nav-text">添加标签和分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#异常处理"><span class="nav-number">2.</span> <span class="nav-text">异常处理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#文件路径包含中文"><span class="nav-number">2.1.</span> <span class="nav-text">文件路径包含中文</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#没有生产标签页和分类页"><span class="nav-number">2.2.</span> <span class="nav-text">没有生产标签页和分类页</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#抓个小球吧"><span class="nav-number">1.</span> <span class="nav-text">抓个小球吧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#抓小球的机器学习框架"><span class="nav-number">2.</span> <span class="nav-text">抓小球的机器学习框架</span></a></li></ol></div>
             
 
           </div>
@@ -809,7 +846,7 @@
 		_hcwp.push({widget:"Bloggerstream", widget_id: 90825, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
 		
-		_hcwp.push({widget:"Stream", widget_id: 90825, xid: "技术/Hexo/How_to_add_tags_page/"});
+		_hcwp.push({widget:"Stream", widget_id: 90825, xid: "技术/MachineLearning/regularization/"});
 		
 
 		(function() {
