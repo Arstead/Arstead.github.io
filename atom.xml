@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://arstead.github.io/"/>
-  <updated>2017-07-27T02:30:52.000Z</updated>
+  <updated>2017-08-01T16:55:15.000Z</updated>
   <id>https://arstead.github.io/</id>
   
   <author>
@@ -16,103 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>来聊聊机器学习</title>
-    <link href="https://arstead.github.io/%E6%8A%80%E6%9C%AF/MachineLearning/regularization/"/>
-    <id>https://arstead.github.io/技术/MachineLearning/regularization/</id>
-    <published>2017-07-26T03:00:58.000Z</published>
-    <updated>2017-07-27T02:30:52.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>伴随这深度学习的流行，机器学习这个领域开始受到大家广泛的关注。特别是在Google阿尔法狗在围棋领域获得让人震惊的战绩之后，机器学习开始被围观群众神话。大家开始认为机器可以思考了，机器已经学习了如何思维了。作为一个机器学习领域的小学生，我只能说，距离计算机能独立思考，真的还远着呢。</p>
-<h4 id="抓个小球吧"><a href="#抓个小球吧" class="headerlink" title="抓个小球吧"></a>抓个小球吧</h4><p>在我看来，机器学习的一个核心假设，来源与相同观测环境下采样的数据样本，是同分布的。什么意思，我们来看一个初中时候经常出现的一个问题，布袋里面抓小球。</p>
-<img src="/技术/MachineLearning/regularization/ball.jpg" alt="ball.jpg" title="">
-<p>我们有10个布袋子$a_1, a<em>2, …, a</em>{10}$，里面装了无限个球，但是每个袋子里面的球可能是任何几种颜色，但比例恒定。并且袋子是黑不溜秋的，看不到里面到底有什么颜色。现在，我们从第一个布袋子里面拿一个球出来，发现是蓝色的$x<em>{11}$，然后再从里面拿一个球出来，发现是绿色的$x</em>{12}$。不停的拿$n$次，我们就得到了一个颜色向量$\chi<em>1=[x</em>{11}, x<em>{12}, …, x</em>{1n}]$，这个我们就可以看作是一个样本，我们可以去另一个袋子里面同样拿n个小球，然后得到其他的样本。这样我们可以构成一个矩阵$X=[\chi_1, \chi_2, …, \chi_m]^T$，每一行是一个样本，一共m个样本。现在，来了一个喜欢开玩笑的小屁孩，他把所有的袋子都藏起来了，然后从其中一个袋子里面拿了n个球出来，给你看一下每一个球的颜色$\chi_t$，想为难你一下，问你是从哪个袋子里面拿出来的。</p>
-<p>我们一步一步简单的来看这个问题，如果说，每个袋子里面的球颜色都是固定的，而且各个袋子里的颜色都不一样，那机智的你应该一眼就知道了，这些球是来自于哪个袋子了。现在，我们增加一点难度，每个袋子里面有两种颜色的球，比例很不均衡，且袋子之间比例高的颜色各不相同。比如第一个袋子里面有红色和蓝色两种球，而且红：蓝是99:1，第二个袋子有黄色和红色两种球，而且黄色：红色是99:1，以此类推。这样的话，如果那个小屁孩给你拿出来的球发现，全是黄色的，这个时候认为这些小球是从第一个袋子里面拿的还是第二个袋子里面拿的呢？如果你觉得是从第二个袋子里面拿的，那个恭喜你。你已经了解到了最大似然估计的基本精髓了。直观的感觉上来说，我们知道，要从第一个袋子里面拿出n个黄色的球，概率是$p(a_1|\chi_t)=0.01^n$，而从第二个袋子中拿出来的概率是$p(a_2|\chi_t)=0.99^n$。所以从第二个袋子里面拿出来的概率比较大，所以我们倾向于选择第二个袋子。</p>
-<p>现在我们把情况再变的复杂一点，现在假设袋子里面颜色改成下面这样的情。</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">袋子编号</th>
-<th style="text-align:center">颜色1，比例</th>
-<th style="text-align:center">颜色2，比例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">0</td>
-<td style="text-align:center">红色，0.8</td>
-<td style="text-align:center">绿色，0.2</td>
-</tr>
-<tr>
-<td style="text-align:center">1</td>
-<td style="text-align:center">蓝色，0.5</td>
-<td style="text-align:center">黄色，0.5</td>
-</tr>
-<tr>
-<td style="text-align:center">2</td>
-<td style="text-align:center">绿色，0.7</td>
-<td style="text-align:center">红色，0.3</td>
-</tr>
-<tr>
-<td style="text-align:center">3</td>
-<td style="text-align:center">黑色，0.2</td>
-<td style="text-align:center">白色，0.8</td>
-</tr>
-<tr>
-<td style="text-align:center">4</td>
-<td style="text-align:center">紫色，0.9</td>
-<td style="text-align:center">绿色，0.1</td>
-</tr>
-<tr>
-<td style="text-align:center">5</td>
-<td style="text-align:center">白色，0.3</td>
-<td style="text-align:center">红色，0.7</td>
-</tr>
-<tr>
-<td style="text-align:center">6</td>
-<td style="text-align:center">黑色，0.8</td>
-<td style="text-align:center">紫色，0.2</td>
-</tr>
-<tr>
-<td style="text-align:center">7</td>
-<td style="text-align:center">黄色，0.3</td>
-<td style="text-align:center">黑色，0.7</td>
-</tr>
-<tr>
-<td style="text-align:center">8</td>
-<td style="text-align:center">绿色，0.7</td>
-<td style="text-align:center">红色，0.3</td>
-</tr>
-<tr>
-<td style="text-align:center">9</td>
-<td style="text-align:center">红色，0.4</td>
-<td style="text-align:center">白色，0.6</td>
-</tr>
-</tbody>
-</table>
-<p>如果现在小屁孩给你看的颜色向量$\chi_t$是$(红, 红, 白, 红, 白, 白, 红, 红, 白, 白)$(假设n=10)。这个时候我们就要犯难了，到底是选5号袋子好还是选9号袋子好呢？(内心戏：如果是黄黑色的话，不管取出来是什么样的，我都会直接选7号袋子)</p>
-<p>首先，我们知道一点，就是选出来的小球顺序如何是没有关系的，我们需要关注的仅仅是各个颜色之间的比例。我们就可以它变成$\chi_s(red, white)=(5, 5)$<br>仿照我们上一个选择的方式，如果直接让我们判断选择哪一个袋子是特别困难的，这个时候我们就需要一个标准。最为自然的想法就是，我看哪一个袋子能拿出这样组合的概率最大，我就选择哪一个袋子。别的袋子不需要考虑了，我们重点看一看5号袋子和9号袋子。在5号袋子里面，拿出这种组合的概率是$p(a_5|\chi<em>t)=C</em>{10}^{5}0.3^50.7^5$，而在9号袋子拿出这种组合的概率是$p(a_9|\chi<em>t)=C</em>{10}^{5}0.4^50.6^5$。经过计算，我们发现，9号袋出现这种组合的概率比较高，我们选择9号袋子。</p>
-<h4 id="抓小球的机器学习框架"><a href="#抓小球的机器学习框架" class="headerlink" title="抓小球的机器学习框架"></a>抓小球的机器学习框架</h4><p>其实看到上面那个例子，我们大致了解了一下机器学习的一个流程。首先，需要训练数据，也就是$X$；然后我们需要提取特征，颜色比例；我们根据X能确定一个数据的分布情况，如上面的表格；其次确定我们的评判依据，最大似然准则；最后我们得出我们要预测的内容，9号袋子。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;伴随这深度学习的流行，机器学习这个领域开始受到大家广泛的关注。特别是在Google阿尔法狗在围棋领域获得让人震惊的战绩之后，机器学习开始被围观群众神话。大家开始认为机器可以思考了，机器已经学习了如何思维了。作为一个机器学习领域的小学生，我只能说，距离计算机能独立思考，真的还
-    
-    </summary>
-    
-      <category term="机器学习" scheme="https://arstead.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="机器学习" scheme="https://arstead.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>北京“划船”记录本</title>
     <link href="https://arstead.github.io/%E9%9A%8F%E8%AE%B0/play_list/"/>
     <id>https://arstead.github.io/随记/play_list/</id>
     <published>2017-05-19T12:00:22.000Z</published>
-    <updated>2017-08-01T15:17:50.000Z</updated>
+    <updated>2017-08-01T16:55:15.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>划船不用桨系列活动。   —kivi</p>
