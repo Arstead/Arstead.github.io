@@ -89,6 +89,7 @@
 <meta property="og:title" content="Hi, Thinking">
 <meta property="og:url" content="https://arstead.github.io/index.html">
 <meta property="og:site_name" content="Hi, Thinking">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hi, Thinking">
 
@@ -1295,7 +1296,7 @@
 <h4 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h4><p>在一个月前就看完了这本书，但是却一直没有完成这篇读书笔记。本来想将所有的家族成员的记录一遍，但是发现这个故事太大，所以，我选取了我最喜欢的几个人物来分析。希望以后在回顾这本书时，能将这篇笔记完成。</p>
 <p>看完这本书之后，真的不知道该怎么写这篇笔记，很想写好这篇笔记却又不知道如何下笔。很少看到如此宏壮而又细腻的小说了，叙述的手法如此精妙。乃至于我们已经放弃了纯粹的逻辑思考，沉浸其中。</p>
 <blockquote>
-<p>“因为年少的无知与浮躁，我差一点错过了它。所以当你还未尝过痛苦，当你还未开始尝试看透生命，请好好的收着它，不要读它。”      –<a href="https://www.douban.com/people/icekiller/">豆瓣用户 阿落</a></p>
+<p>“因为年少的无知与浮躁，我差一点错过了它。所以当你还未尝过痛苦，当你还未开始尝试看透生命，请好好的收着它，不要读它。”      –<a href="https://www.douban.com/people/icekiller/" target="_blank" rel="external">豆瓣用户 阿落</a></p>
 </blockquote>
 <h4 id="喧闹的城镇"><a href="#喧闹的城镇" class="headerlink" title="喧闹的城镇"></a>喧闹的城镇</h4><blockquote>
 <p>多年以后，面对行刑队，奥里雷亚诺.布恩迪亚上校将会回想起父亲带他去见识冰块的那个遥远的下午。那时的马孔多是一个二十户人家的村落，泥巴和芦苇盖成的屋子沿河岸排开，湍急的河水清澈见底，河床里卵石洁白光滑宛如史前巨蛋。世界新生伊始，许多事物还没有名字，提到的时候尚需用手指指点点。    –《百年孤独》 加西亚·马尔克斯</p>
@@ -2017,7 +2018,7 @@
 <h4 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h4><p>刚开始接触机器学习的时候，曾经试过用python写过一个简单的MLP（Multi-Layer Perceptron），其中仅仅只是实现了简单的Gradient Descent算法，激活函数上也只涉及了Sigmod激活函数。在这之后的很多研究中，都是用的现成的算法库在跑，完全接触不到实现方法，编程能力也急剧下降。所以趁着现在有点时间，认真学习一下别人是怎么样实现深度学习方法的。由于我一直使用的是python语言，而且我在入门深度学习的时候也是从Keras这个库开始的。自从被TensorFlow列为官网API之后，Keras使用的人也极具上升。所以决定从Keras源码开始看起，学习一下别人是如何实现深度学习框架的。</p>
 <p>由于我是即兴记录的，目前还没有任何的目标。所以可能会出现结构上有些凌乱，等我都掌握了之后，我再做整理吧。如果发现了我在分析的过程中存在错误或者不足，希望大家能给我留言，欢迎指正。</p>
 <p>在发表之前写了一些内容，但是自低向上写的。结果发现自低向上分析实在有点困难，要直接把底层结构讲清楚确实很困难。所以决定改一改策略，采用自顶向下的方式写，先分析基础构建，再深入底层分析运作原理。注：在代码讲解过程中，我将一些不必要的空行，包导入等不影响整体介绍的部分删掉了，将非重点讲解的内容修改为pass(并不是这部分没有代码)，在部分位置添加了一些标识以定位代码。</p>
-<p>我在开始写这个系列的时候，Keras最新版本还是1.2.2，现在已经出了2.X的版本了，不过核心框架没有变动，仅仅只是做了一些接口的改变，所以依旧可以根据1.2.2版本进行分析。Keras 2改动部分可以在这篇<a href="https://blog.keras.io/introducing-keras-2.html">博文(Introducing Keras 2)</a>上查看。</p>
+<p>我在开始写这个系列的时候，Keras最新版本还是1.2.2，现在已经出了2.X的版本了，不过核心框架没有变动，仅仅只是做了一些接口的改变，所以依旧可以根据1.2.2版本进行分析。Keras 2改动部分可以在这篇<a href="https://blog.keras.io/introducing-keras-2.html" target="_blank" rel="external">博文(Introducing Keras 2)</a>上查看。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/技术/Keras/keras_source_code_analysis_1_introduction/#more" rel="contents">
